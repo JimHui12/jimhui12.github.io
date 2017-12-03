@@ -1,0 +1,143 @@
+html, body{
+	font-size:10px;
+	padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.col-right .profile-info h1{
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+    margin: 30px 0 0;
+    line-height: 1.5em;
+    text-align: center;
+}
+.header{
+    text-align: center;
+}
+.card-info-wrapper .col-left{
+    float: left;
+    width: 33.33333333%
+}
+.card-info-wrapper .col-right{
+    float: right;
+    width: 66.66666667%;
+}
+.row .col-left{
+    display: inline-block;
+}
+
+.row .col-right{
+    display: inline-block;
+}
+
+.clear{
+    clear:both;
+}
+.profile-card{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+   
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px 2px;
+
+}
+.container .profile-card .card-header{    
+    background: #4487F5 url('../img/main_bg.png') no-repeat;
+    background-size: cover; 
+    border-radius: 15px 15px 0px 0px;
+    padding: 0px;
+}
+.card-header .card-info-wrapper{
+    padding: 50px 50px 0 50px;
+    margin: 0px;
+
+}
+.profile-card .card-header .profile-info p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+
+}
+.profile-card .card-header .img-wrapper{
+
+    margin: 0 auto;
+}
+
+.profile-card .card-header .img-wrapper img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    border: 3px solid white;
+}
+
+.profile-card .card-header .col-left .img-wrapper:hover {
+    box-shadow:0 0 10px #000;
+
+}
+
+.profile-card .card-body{
+    padding: 50px;
+    display: inline-block;  
+    width: 100%;
+
+}
+
+.container .profile-card .card-body .profile-detail h2{
+    font-size: 21px;
+    margin-bottom: 10px;
+
+}
+.profile-detail h2 {
+    font-size: 21px;
+    margin: 5px 0 25px;
+}
+
+.profile-detail h2 span {
+    color: #2eca7f;
+}
+.row .col-left{
+    width: 50%;
+}
+.row .col-right{
+    width: 50%;
+}
+.row .col-right .col-left{
+    width: 40%;
+    
+}
+
+.row .col-right .col-right{
+    width: 60%;
+    float: right;
+
+}
+.container .profile-card .card-body .profile-detail p{
+    font-size: 14px;
+}
+.social-links .social-image-wrapper{
+    text-align: center;
+    
+}
+
+.social-links .social-image-wrapper img{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: white;
+    text-align: center;
+    color: grey;
+}
+.overlay{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
