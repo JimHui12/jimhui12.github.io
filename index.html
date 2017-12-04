@@ -5,19 +5,53 @@
             <link rel="stylesheet" href="public/css/app.css" type="text/css"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         </head>
-        <body>
-            <section class="header">
-                    <h1>John Doe</h1>
-            </section>
+        <body>            
+            <!-- Profile Card -->
             <section class="container">
+            <!-- Page Title --> 
+                <header class="header">
+                    <div class="header-content">
+                        <div class="header-title-block">
+                            <div class="header-title">John <span>Doe</span></div>
+                        </div>
+                            
+                            <div class="main-menu-box">
+                                <ul id="nav" class="main-navigation">
+                                    <li>
+                                        <a class="pt-trigger" href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="pt-trigger" href="">Resume</a>
+                                    </li>
+                                    <li>
+                                        <a class="pt-trigger" href="">Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="pt-trigger" href="">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="pt-trigger" href="">Contact</a>
+                                    </li>
+                                </ul>
+    
+                            </div>
+                    </div>
+
+                </header>
                 <div class="profile-card shadow">
+
+                    <!-- Card Header -->
                     <div class="card-header">
                         <div class="card-info-wrapper">
+
+                            <!-- Card Header Content Left -->
                             <div class="col-left">
                                 <div class="img-wrapper">
                                     <img src="./public/img/photo.png" alt="John Doe Profile Image">
                                 </div>
                             </div>
+
+                            <!-- Card Header Content Right -->
                             <div class="col-right">
                                 <div class="profile-info">                   
                                     <h1>John Doe</h1>
@@ -43,8 +77,12 @@
 
                         <div class="overlay"></div>
                     </div>
+
+                    <!-- Card Body -->
                     <div class="card-body">
                         <div class="row">
+
+                            <!-- Card Body Content Left -->
                             <div class="col-left">
                                 <div class="profile-detail">
                                     <h2>
@@ -57,6 +95,8 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <!-- Card Body Content Right -->
                             <div class="col-right">    
                                 <div class="col-left">
                                     <p><strong>Age</strong></p>
@@ -77,9 +117,14 @@
                         </div>
                     </div>
                 </div>
-
+                <footer>
+                        <div class="copyrights">
+                            © 2017 All rights reserved. Designed by <a href="">Jiangren</a>
+                        </div>    
+                    </footer>
             </section>
-            This is a demo page
+
+            
 
         </body>
     </html>
