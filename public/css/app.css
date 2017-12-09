@@ -120,6 +120,7 @@ section{
 .container .profile-card .card-header{    
     background: #4487F5 url('../img/main_bg.png') no-repeat;
     background-size: cover; 
+    -webkit-background-size: cover;
     border-radius: 15px 15px 0px 0px;
     padding: 0px;
 }
@@ -134,22 +135,34 @@ section{
     font-size: 18px;
 
 }
-.profile-card .card-header .img-wrapper{
-
-    margin: 0 auto;
-}
-
-.profile-card .card-header .img-wrapper img{
-    width: 300px;
-    height: 300px;
-    display: block;
+.profile-card .card-header .img-wrapper {
+    max-width: 280px;
+    margin-bottom: -75px;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     border: 3px solid white;
+    background-color: #fff;
 }
 
-.profile-card .card-header .col-left .img-wrapper:hover {
-    box-shadow:0 0 10px #000;
+.profile-card .card-header .img-wrapper:hover {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+
 
 }
+
 
 .profile-card .card-body{
     padding: 50px;
@@ -157,6 +170,7 @@ section{
     width: 100%;
     background: white;
     border-radius: 0px 0px 15px 15px;
+    
 
 }
 
@@ -193,6 +207,10 @@ section{
 .container .profile-card .card-body .profile-detail p{
     font-size: 14px;
 }
+.hide{
+    display: none;
+}
+
 .social-links .social-image-wrapper{
     text-align: center;
     
