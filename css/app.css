@@ -242,6 +242,15 @@ body{
     padding: 30px 50px 50px;
 }
 
+.profile-detail h3{
+    font-size: 21px;
+    margin: 5px 0 25px;   
+}
+
+.profile-detail h3 span {
+    color: #2eca7f;
+}
+
 .profile-card .card-body div{
     display: inline-block;
     height: 100%;
@@ -251,30 +260,27 @@ body{
     margin-bottom: 10px;
 }
 
-.profile-detail h3{
-    font-size: 21px;
-    margin: 5px 0 25px;   
-}
 
-.profile-detail h3 span {
-    color: #2eca7f;
-}
 .row .col-left{
     width: 50%;
 }
-.row .col-right{
-    width: 50%;
-}
-.row .col-right .col-left{
-    padding-left: 50px;
-    width: 40%;
+
+.info-list{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     
 }
 
-.row .col-right .col-right{
-    width: 60%;
-    float: right;
+.info-list li{
+    margin: 6px 0;
+    text-align: left;
 
+}
+
+.info-list li .title{
+    
 }
 
 .hide{
