@@ -12,7 +12,8 @@
 <body class="material-template">
     <!-- pre loader anime-->
     <div class="pre-loader">
-    
+        <div class="preloader-spinner">
+        </div>
     </div>     
 
     <div id="page" class="page">         
@@ -26,9 +27,9 @@
                 </div>
                 
                 <!-- Navigation -->
-                <div class="main-menu-box">
+                <div class="site-nav">
                     <!-- Site main menu -->
-                    <ul id="nav" class="main-navigation">
+                    <ul id="nav" class="site-main-menu">
                         <li>
                             <a class="pt-trigger" href="#home">Home</a>
                         </li>
@@ -39,27 +40,34 @@
                             <a class="pt-trigger" href="#services">Services</a>
                         </li>
                         <li>
-                            <a class="pt-trigger" href="">Blog</a>
+                            <a class="pt-trigger" href="#blog">Blog</a>
                         </li>
                         <li>
-                            <a class="pt-trigger" href="">Contact</a>
+                            <a class="pt-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
-
         </header>
+        <div class="mobile-header mobile-visible">
+            <div class="mobile-logo-container">
+                <div class="mobile-site-title">Jianghua Hui</div>
+            </div>
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     <div id="main" class="site_main">
-        <div class="page_change_wrapper">
-            <div class="sub_pages">
+        <div class="pt-wrapper">
+            <div class="subpages">
 
                 <!-- Home Page -->
-                <section class="pt_page pt_page_current" data-id ="home">
-                    <div class="profile-card shadow">
+                <section class="pt_page" data-id ="home">
+                    <div class="section-inner start-page-content">
                         <!-- Card Header -->
                         <div class="card-header">
-                            <div class="card-info-wrapper">
+                            <div class="row">
                                 <!-- Card Header Content Left -->
                                 <div class="col-left">
                                     <div class="img-wrapper" onmouseover="showLink(this)" onmouseout="hideLink()">
