@@ -67,6 +67,13 @@ img{
     border: 0;
     -ms-interpolation-mode: bicubic;   
 }
+
+.page{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 .header{
     position: fixed;
     width: 100%;
@@ -136,16 +143,16 @@ img{
     height: auto;
     position: relative;
 }
-.main-menu-box {
+.site-nav {
     float: right;
      
 }
-.main-navigation{
+.site-main-menu{
     display: block;
     padding: 0;
     margin: 0;
 }
-.main-navigation li{
+.site-main-menu li{
     display: inline-block;
     float: left;
     position: relative;
@@ -155,13 +162,13 @@ img{
 }
 
 @media only screen and (min-width: 991px) {
-    .header.sticked .main-navigation{
+    .header.sticked .site-main-menu{
         margin-top: 13px;
     }
 }
 
-.main-navigation li a, 
-.main-navigation li a:hover{
+.site-main-menu li a, 
+.site-main-menu li a:hover{
     display: block;
     text-align: center;
     padding: 8px 0px;
@@ -176,17 +183,17 @@ img{
     outline: none;
 }
 
-.main-navigation li:last-child a{
+.site-main-menu li:last-child a{
     margin-right: 0;
 }
 
-.main-navigation li a:hover, 
-.main-navigation li.active a{
+.site-main-menu li a:hover, 
+.site-main-menu li.active a{
     background-color: transparent;
     opacity: 1;
 }
 
-.main-navigation li a:after{
+.site-main-menu li a:after{
     display: block;
     position: absolute;
     right: 0;
@@ -204,16 +211,16 @@ img{
     transition: all 0.15s ease-in-out;   
 }
 
-.main-navigation li a:hover::after,
-.main-navigation li.active a::after{
+.site-main-menu li a:hover::after,
+.site-main-menu li.active a::after{
     width: 25px;
 }
 
-.card-info-wrapper .col-left{
+.row .col-left{
     float: left;
     width: 33.33333333%
 }
-.card-info-wrapper .col-right{
+.row .col-right{
     float: right;
     width: 66.66666667%;
 }
@@ -229,12 +236,12 @@ img{
     clear:both;
 }
 
-.shadow{
+.start-page-content{
    
 
 }
 
-.pt_page .profile-card{
+.pt_page .section-inner{
     position: relative;
     background-color: white;
     overflow: hidden;
@@ -269,7 +276,7 @@ img{
     height: auto;
 }
 
-.pt_page .profile-card .card-header{   
+.pt_page .section-inner .page-header{   
     position: relative;
     padding: 50px;
     margin-bottom: 25px; 
@@ -280,7 +287,7 @@ img{
     background-position: center center;
 }
 
-.profile-card .card-header .img-wrapper {
+.section-inner .page-header .img-wrapper {
     max-width: 280px;
     max-height: 280px;
     margin-bottom: -25px;
@@ -296,7 +303,7 @@ img{
     background-color: #fff;
 }
 
-.profile-card .card-header .img-wrapper:hover {
+.section-inner .page-header .img-wrapper:hover {
     -webkit-transform: translateY(-9px);
     -ms-transform: translateY(-9px);
     -o-transform: translateY(-9px);
@@ -307,40 +314,40 @@ img{
     box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
 }
 
-.profile-card .card-header .profile-info {
+.section-inner .page-header .profile-info {
     text-align: center;
 }
 
-.profile-card .card-header .profile-info h1 {
+.section-inner .page-header .profile-info h1 {
     color: white;
     font-size: 54px;
     font-weight: 700;
     margin: 30px 0 0;
 }
-.profile-card .card-header .profile-info .sp-subtitle{
+.section-inner .page-header .profile-info .sp-subtitle{
     color: white;
     font-size: 18px;
     margin: 0;
 }
 
 
-.profile-card .card-header .img-wrapper img{
+.section-inner .page-header .img-wrapper img{
     width:100%;
     height: 100%;
 }
 
 
-.pt_page .profile-card .card-body .profile-detail p{
+.pt_page .section-inner .card-body .profile-detail p{
     font-size: 14px;
 }
 
-.pt_page .profile-card .card-body .profile-detail h2{
+.pt_page .section-inner .card-body .profile-detail h2{
     font-size: 21px;
     margin-bottom: 10px;
 
 }
 
-.profile-card .card-body{
+.section-inner .card-body{
     padding-top: 20px;
 }
 
@@ -357,12 +364,12 @@ img{
     color: #2eca7f;
 }
 
-.profile-card .card-body div{
+.section-inner .card-body div{
     display: inline-block;
     height: 100%;
 }
 
-.profile-card .profile-detail .block-title h3 {
+.section-inner .profile-detail .block-title h3 {
     margin-bottom: 10px;
 }
 
@@ -399,7 +406,7 @@ img{
     display: none;
 }
 
-.profile-card .social-links{
+.section-inner .social-links{
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -407,7 +414,7 @@ img{
 
 }
 
-.profile-card .social-links a{
+.section-inner .social-links a{
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -419,13 +426,13 @@ img{
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
 }
 
-.profile-card .social-links a:hover{
+.section-inner .social-links a:hover{
     -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
 }
 
-.profile-card .social-links a i{
+.section-inner .social-links a i{
     line-height: 36px;
     font-size: 16px;
 }
