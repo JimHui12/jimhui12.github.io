@@ -112,7 +112,7 @@ img{
     }
 }
 
-.header-title-block{
+.site-title-block{
     position: relative;
     float: left;
     z-index: 1;
@@ -162,7 +162,7 @@ img{
 }
 
 @media only screen and (min-width: 991px) {
-    .header.sticked .site-main-menu{
+    .header.sticked .site-main-menu li{
         margin-top: 13px;
     }
 }
