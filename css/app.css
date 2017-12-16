@@ -88,19 +88,12 @@ img{
     visibility: hidden;
 }
 
-.header{
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    background-color: transparent;
-    z-index: 2;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;    
-    
+.mobile-hidden {
+    display: block;
+    visibility: visible;
 }
+
+
 
 body > footer{
     position: fixed;
@@ -210,6 +203,20 @@ body > footer .copyrights {
 /* ============================================================================= 
 5. Site header (Panel with logo & navigation)
 ============================================================================= */
+.header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    z-index: 2;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;    
+    
+}
+
 .header *{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -257,18 +264,18 @@ body > footer .copyrights {
     color: #2eca7f;
 }
 
-.header .site-title{
+.header.sticked .site-title{
     margin-top: 18px;
 }
 
-.site_main{
+.site_main {
     width: 100%;
     height: auto;
     position: relative;
 }
+
 .site-nav {
-    float: right;
-     
+    float: right;     
 }
 .site-main-menu{
     display: block;
@@ -521,26 +528,11 @@ body > footer .copyrights {
 
 }
 
-.pt_page .section-inner .page-content .about-me p{
-    font-size: 14px;
-}
-
-.pt_page .section-inner .page-content .about-me h2{
-    font-size: 21px;
-    margin-bottom: 10px;
-
-}
-
-.about-me h3 span {
-    color: #2eca7f;
-}
-
-.info-list{
+.info-list {
     display: inline-block;
     margin: 0;
     padding: 0;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .info-list li{
@@ -564,6 +556,9 @@ body > footer .copyrights {
 }
 
 
+/* =======================================
+ Modal form
+======================================= */
 .overlay{
     
     width: 100%;
@@ -636,5 +631,11 @@ body > footer .copyrights {
 }
 
 
+
+
+
+/* =======================================
+7.2. Resume subpage
+======================================= */
 
 
