@@ -107,21 +107,14 @@ img{
   
 }
 
-.block-title h3{
-    color: #2eca7f;    
-}
-
-.block-title h3 span{
-    color: #2eca7f;    
-}
 
 @media only screen and (min-width: 991px) {
     .header.sticked{
-        background-color: #fff;
-        height: 60px;
-        -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-        -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);        
+    background-color: #fff;
+    height: 60px;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);        
     }
 }
 
@@ -134,7 +127,7 @@ img{
 
 }
 
-.header-title{
+.site-title{
     color: #49515d;
     font-size: 20px;
     font-weight: 500;
@@ -143,11 +136,11 @@ img{
     margin: 38px 0 0;
 }
 
-.header-title span{
+.site-title span{
     color: #2eca7f;
 }
 
-.header .header-title{
+.header .site-title{
     margin-top: 18px;
 }
 
@@ -255,17 +248,6 @@ img{
     backface-visibility: hidden;    
 }
 
-.pt-page .section-inner{
-    position: relative;
-    background-color: white;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-   
-}
-
 .pt-page{
     width: 100%;
     max-width: 1032px;
@@ -284,14 +266,73 @@ img{
     transform: translate3d(0, 0, 0);
 }
 
+.pt-page .section-inner{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+   
+}
 
+.no-js .pt-page{
+    position: relative;
+}
 
-.pt_page_current{
+.pt-page-content{
+    position: absolute;
+    width: 100%;
+}
+
+.pt_page_current,
+.no-js .pt-page {
     visibility: visible;
     z-index: 90;
     opacity: 1;
     overflow: visible;
     height: auto;
+}
+
+.pt-page.pt-page-current .portfolio-grid {
+    display: block;
+}
+  
+
+.no-js .pt-page * {
+    height: auto;
+}
+
+.no-js body {
+    overflow: auto;
+}
+
+.page-header{
+    margin-top: 0;
+}
+
+.page-content {
+    padding: 30px 50px 50px;
+}
+
+
+.block-title h3{
+    color: #2eca7f;    
+}
+
+.block-title h3 span{
+    color: #2eca7f;    
+}
+
+.custom-page-content .block {
+    marign-bottom: 30px;
+}
+
+.custom-page-content .page-header{
+    background-color: white;
+    border: 0;
+    
 }
 
 .start-page-content .page-header{   
@@ -411,14 +452,6 @@ img{
     margin-bottom: 10px;
 
 }
-
-
-
-.page-content {
-    padding: 30px 50px 50px;
-}
-
-
 
 .about-me h3 span {
     color: #2eca7f;
