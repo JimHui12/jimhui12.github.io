@@ -1,3 +1,8 @@
+
+
+/* ============================================================================= 
+2. General styles
+============================================================================= */
 html{
     position: relative;
     height: 100%;
@@ -78,6 +83,11 @@ img{
     height: auto;
 }
 
+.mobile-visible{
+    display: none;
+    visibility: hidden;
+}
+
 .header{
     position: fixed;
     width: 100%;
@@ -92,6 +102,114 @@ img{
     
 }
 
+body > footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body > footer .copyrights {
+    display: block;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #9e9e9e;
+}
+
+
+
+
+
+
+/* ============================================================================= 
+4. Subpages changer
+============================================================================= */
+.pt-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+}
+
+.subpages{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    overflow: hidden;
+    -webkit-perspective: 1500px;
+    -moz-perspective: 1500px;
+    perspective: 1500px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;    
+}
+
+.pt-page{
+    width: 100%;
+    max-width: 1032px;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: auto;
+    padding: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.pt-page .section-inner{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
+   
+}
+
+.no-js .pt-page{
+    position: relative;
+}
+
+.pt-page-content{
+    position: absolute;
+    width: 100%;
+}
+
+.pt_page_current,
+.no-js .pt-page {
+    visibility: visible;
+    z-index: 90;
+    opacity: 1;
+    overflow: visible;
+    height: auto;
+}
+
+.pt-page.pt-page-current .portfolio-grid {
+    display: block;
+}
+  
+
+.no-js .pt-page * {
+    height: auto;
+}
+
+.no-js body {
+    overflow: auto;
+}
+
+
+/* ============================================================================= 
+5. Site header (Panel with logo & navigation)
+============================================================================= */
 .header *{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -226,87 +344,13 @@ img{
     clear:both;
 }
 
-.pt-wrapper{
-    position: relative;
-    width: 100%;
-    padding: 0;
-    z-index: 1;
-}
 
-.subpages{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 100px;
-    overflow: hidden;
-    -webkit-perspective: 1500px;
-    -moz-perspective: 1500px;
-    perspective: 1500px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;    
-}
 
-.pt-page{
-    width: 100%;
-    max-width: 1032px;
-    height: 0;
-    opacity: 0;
-    position: absolute;
-    top: auto;
-    padding: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    background-color: transparent;
-    overflow: hidden;
-    visibility: hidden;
-    transform: translate3d(0, 0, 0);
-}
 
-.pt-page .section-inner{
-    position: relative;
-    background-color: white;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
-   
-}
-
-.no-js .pt-page{
-    position: relative;
-}
-
-.pt-page-content{
-    position: absolute;
-    width: 100%;
-}
-
-.pt_page_current,
-.no-js .pt-page {
-    visibility: visible;
-    z-index: 90;
-    opacity: 1;
-    overflow: visible;
-    height: auto;
-}
-
-.pt-page.pt-page-current .portfolio-grid {
-    display: block;
-}
-  
-
-.no-js .pt-page * {
-    height: auto;
-}
-
-.no-js body {
-    overflow: auto;
-}
-
+/* ============================================================================= 
+6. Site content
+============================================================================= */
+/* Page header */
 .page-header{
     margin-top: 0;
 }
@@ -363,7 +407,12 @@ img{
     background-color: #fff;
 }
   
-
+/* ============================================================================= 
+7. Subpages
+============================================================================= */
+/* =======================================
+7.1. Home subpage
+======================================= */
 .start-page-content .page-header{   
     position: relative;
     padding: 50px;
@@ -486,9 +535,6 @@ img{
     color: #2eca7f;
 }
 
-
-
-
 .info-list{
     display: inline-block;
     margin: 0;
@@ -528,20 +574,7 @@ img{
     z-index: 0;
 }
 
-body > footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
-body > footer .copyrights {
-    display: block;
-    margin-bottom: 12px;
-    text-align: center;
-    font-size: 12px;
-    color: #9e9e9e;
-  }
 
 .contact-modal {
     display: none;
@@ -601,6 +634,7 @@ body > footer .copyrights {
 .modal-body #email{
     width: 60%;
 }
+
 
 
 
