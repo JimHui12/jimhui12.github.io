@@ -713,6 +713,54 @@ body > footer .copyrights {
     border-left: 1px solid #e0e0e0;
 }
 
+/* Skills */
+.skills-info {
+    margin-bottom: 30px;
+}
+
+.skills-info h4 {
+    font-size: 0.8em;
+    line-height: 1.1em;
+    position: relative;
+    margin: 0 0 5px;
+}
+
+.skill-container {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 12px;
+    margin-bottom: 12px;
+    width: 100%;    
+}
+
+.skill-percentage {
+    background-color: #2eca7f;
+    height: 10px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
