@@ -742,6 +742,35 @@ body > footer .copyrights {
     padding: 0;
 }
 
+/* Animate skills on subpage load */
+.pt-page .skill-percentage {-
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;   
+}
+
+.js .pt-page:not(.pt-page.pt-page-current) .skill-percentage {
+    width: 0;
+}
+
+/*Skill 1*/
+.skill-percentage.skill-1{
+    width: 88%;
+}
+
+.skill-percentage.skill-2{
+    width: 75%;
+}
+
+.skill-percentage.skill-3{
+    width: 60%;
+}
+
+.skill-percentage.skill-4{
+    width: 95%;
+}
 
 
 
