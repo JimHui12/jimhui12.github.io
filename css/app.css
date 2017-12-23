@@ -825,7 +825,11 @@ body > footer .copyrights {
     box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);    
 }
 
-
+.service-block img{
+    max-width: 100px;
+    height: 64px;
+    margin: 28px 0;
+}
 
 
 
