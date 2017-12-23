@@ -814,7 +814,16 @@ body > footer .copyrights {
     transition: all 0.3s ease-in-out;    
 }
 
-
+.service-image:hover {
+    -webkit-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+    transform: translateY(-7px);
+    -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);    
+}
 
 
 
