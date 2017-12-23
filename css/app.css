@@ -795,7 +795,23 @@ body > footer .copyrights {
 ======================================= */
 /* Services */
 .service-block {
-    
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px; 
+}
+
+.service-imge {
+    width: 120px;
+    height: 120px;
+    background-color: #fafafa;
+    border-radius: 100px;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;    
 }
 
 
