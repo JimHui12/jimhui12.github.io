@@ -927,5 +927,18 @@ body > footer .copyrights {
     margin: 0 auto;
 }
 
+.testimonial-credits {
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
 
-
+.testimonial-author {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #212121;
+    margin: 0;
+    font-weight: 400;
+}
