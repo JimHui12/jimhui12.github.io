@@ -880,7 +880,9 @@ body > footer .copyrights {
     opacity: 1;
 }
 
-
+.client-block img {
+    max-width: 80px;
+}
 
 
 
