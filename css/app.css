@@ -743,7 +743,7 @@ body > footer .copyrights {
 }
 
 /* Animate skills on subpage load */
-.pt-page .skill-percentage {-
+.pt-page .skill-percentage {
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
     -o-transition: all 2s ease-in-out;
@@ -956,3 +956,29 @@ body > footer .copyrights {
     height: auto;
     margin-top: -25px;
 }
+
+.testimonial-content .testimonial-text {
+    padding: 2.2em, 1.2en, 1.5em;
+    font-style: italic;
+    border: 1px solid #e0e0e0;
+    border-top: 2px solid #2eca7f;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    z-index: -1;
+}
+
+.testimonial-content .testimonial-text p {
+    margin: 0;
+}
+
+.testimonial-picture {
+    display: table-cell;
+    width: 80px;
+    height: 80px;
+    background-color: #fcfcfc;
+    border-radius: 100px;
+    margin: 0;
+    z-index: 1;
+}
+
