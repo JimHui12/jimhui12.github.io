@@ -942,3 +942,17 @@ body > footer .copyrights {
     margin: 0;
     font-weight: 400;
 }
+
+.testimonial-author-info {
+    display: table-cell;
+    position: relative;
+    padding-left: 12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.testimonial-content {
+    width: 100%;
+    height: auto;
+    margin-top: -25px;
+}
