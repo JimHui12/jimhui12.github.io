@@ -895,7 +895,19 @@ body > footer .copyrights {
     padding: 20px 10px 15px;
 }
 
+.fun-fact-block.gray-bg {
+    background-color: #fafafa;
+}
 
+.fun-fact-block h4 {
+    margin-top: 10px;
+}
+
+.fun-fact-block .pe-7s-icon {
+    position: relative;
+    font-size: 56px;
+    color: #9e9e9e
+}
 
 
 
