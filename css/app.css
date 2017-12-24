@@ -906,9 +906,26 @@ body > footer .copyrights {
 .fun-fact-block .pe-7s-icon {
     position: relative;
     font-size: 56px;
-    color: #9e9e9e
+    color: #9e9e9e;
 }
 
+.fun-fact-block .fun-value {
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+    margin: 10px 0;
+    color: #2eca7f;
+}
+
+/* Testimonials */
+.testimonials {
+    width: 100%;
+}
+
+.testimonial-item {
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 
