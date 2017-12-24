@@ -884,7 +884,16 @@ body > footer .copyrights {
     max-width: 80px;
 }
 
-
+/* Fun Facts */
+.fun-fact-block {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    background: #fff;
+    padding: 20px 10px 15px;
+}
 
 
 
