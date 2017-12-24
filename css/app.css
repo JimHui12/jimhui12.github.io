@@ -876,6 +876,10 @@ body > footer .copyrights {
     transition: all 0.2s ease-in-out;    
 }
 
+.client-block:hover {
+    opacity: 1;
+}
+
 
 
 
