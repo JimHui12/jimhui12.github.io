@@ -1020,7 +1020,23 @@ body > footer .copyrights {
     -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
     box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);    
+}
 
+.lm-pricing .lm-package:hover,
+.lm-pricing .lm-package-wrap.highlight-col .lm-package:hover {
+    -webkit-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+    -webkit-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);    
+}
+
+.lm-pricing .lm-package-wrap.highlight-col .lm-heading-row span {
+    position: relative;
+    display: inline-block;
 }
 
 
