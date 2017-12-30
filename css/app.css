@@ -1087,7 +1087,14 @@ body > footer .copyrights {
 7.5. Blog subpage
 ======================================= */
 /* Blog */
-
+.blog-masonry {
+    margin: 0 -1em;
+}
+.blog-masonry .two-columns .item {
+    width: 50%;
+    float: left;
+    padding: 1em;
+}
 
 
 
