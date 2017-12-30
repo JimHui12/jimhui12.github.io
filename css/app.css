@@ -1050,5 +1050,28 @@ body > footer .copyrights {
     right: 0;
 }
 
+.lm-pricing .lm-pricing-row {
+    padding: 30px 0 10px;
+}
+
+.lm-pricing .lm-pricing-row span {
+    display: block;
+    line-height: 1;
+    font-size: 42px;
+}
+
+.lm-pricing .lm-pricing-row small {
+    color: #aaa;
+    display: block;
+}
+
+.lm-pricing .lm-default-row {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.lm-pricing .lm-button-row {
+    padding: 10px 0 20px;
+}
 
 
