@@ -989,3 +989,15 @@ body > footer .copyrights {
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
     border-radius: 100px;    
 }
+
+.testimonials-firm {
+    font-size: 10px;
+    line-height: 1.5em;
+    color: #9e9e9e;
+    margin: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
