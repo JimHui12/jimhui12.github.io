@@ -1039,7 +1039,16 @@ body > footer .copyrights {
     display: inline-block;
 }
 
-
+.lm-pricing .lm-package-wrap.highlight-col .lm-heading-row span:after {
+    content: '';
+    height: 2px;
+    margin: 2px;
+    background-color: #2eca7f;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    right: 0;
+}
 
 
 
