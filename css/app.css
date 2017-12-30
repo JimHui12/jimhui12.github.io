@@ -1145,8 +1145,19 @@ body > footer .copyrights {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-     
+    transition: all 0.2s ease-in-out;     
+}
+
+.blog-card .post-date span {
+    display: block;
+    color: #2eca7f;
+    line-height: 1;
+    font-size: 12px;
+    margin: 0;
+}
+
+.blog-card .media-block {
+    position: relative;
 }
 
 
