@@ -1107,4 +1107,19 @@ body > footer .copyrights {
     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
 
+.blog-card:hover {
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+    box-shadow: 0 1px 15px rgba(0,0,0,0.11);    
+}
+
+.blog-card .post-image {
+    width: 100%;
+    margin: 0;
+}
+
+.blog-card .post-info {
+    padding: 0.8em 1.2em 1.4em;
+}
+
 
