@@ -1000,4 +1000,30 @@ body > footer .copyrights {
     font-weight: lighter;
 }
 
+/* Pricing */
+.lm-pricing .lm-package {
+    border: 1px solid #e0e0e0;
+    padding: 30px 30px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.lm-pricing .lm-package-wrap.highlight-col .lm-package {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12);    
+
+}
+
+
+
+
 
