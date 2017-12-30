@@ -1122,4 +1122,40 @@ body > footer .copyrights {
     padding: 0.8em 1.2em 1.4em;
 }
 
+.blog-card .blog-item-title {
+    margin: 5px 0 0 0;
+}
+
+.blog-card .post-meta {
+    padding: 1em;
+    margin: 0;
+}
+
+.blog-card .post-date {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0.3em;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    right: 1em;
+    min-width: 44px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+     
+}
+
+
+
+
+
+
+
+
+
+
 
