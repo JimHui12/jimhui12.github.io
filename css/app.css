@@ -1205,6 +1205,20 @@ body > footer .copyrights {
     opacity: 1;
 }
 
+.blog-card .post-date span.day {
+    font-size: 21px;
+    margin: 3px 0;
+}
+
+.blog-card .post-date span.month {
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.blog-card .post-date span.year {
+    font-size: 0.8em;
+}
+
 
 
 
