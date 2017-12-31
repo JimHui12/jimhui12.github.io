@@ -1225,7 +1225,9 @@ body > footer .copyrights {
     margin: 0;
 }
 
-
+.blog-card ul.category li {
+    display: inline-block;
+}
 
 
 
