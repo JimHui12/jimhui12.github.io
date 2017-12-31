@@ -1200,6 +1200,11 @@ body > footer .copyrights {
     color: #fff;
 }
 
+.blog-card .media-block a:hover .mask {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 
 
