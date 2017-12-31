@@ -1160,6 +1160,33 @@ body > footer .copyrights {
     position: relative;
 }
 
+.blog-card .media-block a .mask {
+    position: absolute;
+    background: #4f565e;
+    background: rgba(79, 86, 94, 0.6);
+    display: inline-block;
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;        
+}
+
 
 
 
