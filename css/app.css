@@ -1245,7 +1245,9 @@ body > footer .copyrights {
     margin-right: 10px;
 }
 
-
+.post-meta .item:before {
+    padding-right: 5px;
+}
 
 
 
