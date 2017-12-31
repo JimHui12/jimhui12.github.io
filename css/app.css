@@ -1187,7 +1187,18 @@ body > footer .copyrights {
     transition: all 0.2s ease-in-out;        
 }
 
-
+.blog-card .media-block a .mask:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    text-align: center;
+    content: "\f0f6";
+    color: #fff;
+}
 
 
 
