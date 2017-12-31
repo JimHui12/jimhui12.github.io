@@ -1235,5 +1235,17 @@ body > footer .copyrights {
     font-weight: 400;
 }
 
+.blog-card .post-meta .item .post-meta .item a {
+    color: #a6a6a6;
+}
+
+.post-meta .item {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+
+
 
 
