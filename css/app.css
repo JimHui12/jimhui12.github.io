@@ -1219,7 +1219,11 @@ body > footer .copyrights {
     font-size: 0.8em;
 }
 
-
+.blog-card ul.category {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 
 
