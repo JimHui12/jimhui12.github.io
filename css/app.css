@@ -1278,6 +1278,11 @@ body > footer .copyrights {
     text-align: center;    
 }
 
+.ci-text {
+    position: relative;
+    padding-left: 50px;
+}
+
 
 
 
