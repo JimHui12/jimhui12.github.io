@@ -1267,6 +1267,19 @@ body > footer .copyrights {
     margin-bottom: 30px;
 }
 
+.contact-info-block .ci-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 36px;
+    height: 36px;
+    background-color: #fafafa;
+    border-radius: 20px;
+    text-align: center;    
+}
+
+
+
 
 
 
