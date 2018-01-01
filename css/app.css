@@ -1254,6 +1254,14 @@ body > footer .copyrights {
 7.6. Contact subpage
 ======================================= */
 /* Contact info */
+.contact-info-block {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 10px 10px 10px 0;
+}
 
 
 
