@@ -1283,7 +1283,17 @@ body > footer .copyrights {
     padding-left: 50px;
 }
 
+.contact-info-block h5 {
+    margin: 5px 0;
+}
 
+.contact-info-block i {
+    position: relative;
+    font-size: 18px;
+    color: #2eca7f;
+    text-align: center;
+    line-height: 36px;
+}
 
 
 
