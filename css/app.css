@@ -1263,6 +1263,10 @@ body > footer .copyrights {
     padding: 10px 10px 10px 0;
 }
 
+.contact-info-block:last-child {
+    margin-bottom: 30px;
+}
+
 
 
 
