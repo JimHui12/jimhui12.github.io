@@ -1300,9 +1300,12 @@ body > footer .copyrights {
     margin-bottom: 20px;
 }
 
-
-
-
+/* Google Map */
+.map {
+    width: 100%;
+    height: 180px;
+    margin: 15px 0 30px;
+}
 
 
 
