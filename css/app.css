@@ -1295,7 +1295,10 @@ body > footer .copyrights {
     line-height: 36px;
 }
 
-
+/* Contact form */
+.g-recaptcha {
+    margin-bottom: 20px;
+}
 
 
 
