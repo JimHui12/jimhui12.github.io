@@ -1312,7 +1312,13 @@ body > footer .copyrights {
 /* ============================================================================= 
 10. Single Page Layout (Blog Post page ...)
 ============================================================================= */
-
+.single-page-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 50px;
+    padding-top: 100px; 
+    z-index: 1;
+}
 
 
 
