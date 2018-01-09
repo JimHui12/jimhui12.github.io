@@ -1405,6 +1405,12 @@ blockquote footer, blockquote small, blockquote .small {
     color: #fff;
 }
 
+.entry-meta.entry-tags-share .post-info span {
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1em;
+}
+
 
 
 
