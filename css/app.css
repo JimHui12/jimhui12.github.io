@@ -1371,6 +1371,10 @@ blockquote footer, blockquote small, blockquote .small {
     color: #9e9e9e;
 }
 
+.blog-post-content .block-title {
+    margin: 40px 0 10px;
+}
+
 
 
 
