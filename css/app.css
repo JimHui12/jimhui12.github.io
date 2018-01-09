@@ -1380,6 +1380,9 @@ blockquote footer, blockquote small, blockquote .small {
     margin: 20px 0 30px;
 }
 
+.entry-meta a{
+    color: #9e9e9e;
+}
 
 
 
