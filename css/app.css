@@ -1363,6 +1363,14 @@ blockquote {
     font-style: italic;
 }
 
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote footer, blockquote small, blockquote .small {
+    color: #9e9e9e;
+}
+
 
 
 
