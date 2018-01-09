@@ -1423,7 +1423,10 @@ blockquote footer, blockquote small, blockquote .small {
     margin-top: 0;
 }
 
-
+.post-comments .media-object {
+    max-width: 60px;
+    border-radius: 50px;
+}
 
 
 
