@@ -1411,6 +1411,12 @@ blockquote footer, blockquote small, blockquote .small {
     line-height: 1em;
 }
 
+.blog-post-content .post-comment-add {
+    max-width: 700px;
+}
+
+
+
 
 
 
