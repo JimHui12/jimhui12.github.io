@@ -1440,6 +1440,11 @@ blockquote footer, blockquote small, blockquote .small {
     color: #ffcd38;
 }
 
+.blog-post-content .divider {
+    color: #d3d3d3;
+    margin: 0 2px;
+    min-width: 5px;
+}
 
 
 
