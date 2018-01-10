@@ -1484,7 +1484,10 @@ blockquote footer, blockquote small, blockquote .small {
         visibility: hidden !important;
     }
 
-    
+    .border-block-top-110 {
+        display: none;
+    }
+
 
 
 
