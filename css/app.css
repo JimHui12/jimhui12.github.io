@@ -1478,6 +1478,17 @@ blockquote footer, blockquote small, blockquote .small {
         display: block;
         visibility: visible;
     }
+
+    .mobile-hidden {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    
+
+
+
+
 }
 
 
