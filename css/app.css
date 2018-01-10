@@ -1461,3 +1461,24 @@ blockquote footer, blockquote small, blockquote .small {
     }
 }
 
+@media only screen and (max-width: 1032){
+    .header .header-content{
+        margin: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
