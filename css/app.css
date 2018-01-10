@@ -1465,6 +1465,12 @@ blockquote footer, blockquote small, blockquote .small {
     .header .header-content{
         margin: 0 15px;
     }
+
+    .pt-page {
+        margin: 0 15px;
+        width: auto;
+    }
+
 }
 
 
