@@ -1451,6 +1451,13 @@ blockquote footer, blockquote small, blockquote .small {
     font-size: 12px;
 }
 
+/* ============================================================================= 
+12. Media Queries 
+============================================================================= */
 
-
+@media only screen and (max-width: 1320px){
+    .portfolio-grid figure {
+        width: 33.33333%;
+    }
+}
 
