@@ -1520,6 +1520,10 @@ blockquote footer, blockquote small, blockquote .small {
         margin-top: 31px;
     }
 
+    .site-title {
+        font-size: 24px;
+    }
+
 
 }
 
