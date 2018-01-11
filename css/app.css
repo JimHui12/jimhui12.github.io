@@ -1516,6 +1516,9 @@ blockquote footer, blockquote small, blockquote .small {
         transition: all 0.44s ease-in-out;        
     }
 
+    .my-photo {
+        margin-top: 31px;
+    }
 
 
 }
