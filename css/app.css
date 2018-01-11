@@ -1539,6 +1539,13 @@ blockquote footer, blockquote small, blockquote .small {
         z-index: 1000;        
     }
 
+    .mobile-logo-container {
+        margin: 0 20px;
+        text-align: left;
+    }
+
+    
+
 }
 
 
