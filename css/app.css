@@ -1544,7 +1544,16 @@ blockquote footer, blockquote small, blockquote .small {
         text-align: left;
     }
 
-    
+    .mobile-site-title {
+        display: inline-block;
+        float: left;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        margin: 0;
+        line-height: 50px;
+    }
 
 }
 
