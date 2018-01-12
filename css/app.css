@@ -1609,6 +1609,17 @@ blockquote footer, blockquote small, blockquote .small {
     .section-title:after {
         display: none;
     }
+
+    .section-title-block .section-description {
+        position: relative;
+        font-size: 13px;
+        margin-top: -10px;
+    }
+
+    p.site-description {
+        color: #9e9e9e;
+        text-shadow: none;
+    }
 }
 
 
