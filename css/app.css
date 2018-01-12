@@ -1589,6 +1589,17 @@ blockquote footer, blockquote small, blockquote .small {
         box-shadow: none;       
     }
 
+    .section-title-block {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .section-title-wrapper {
+        display: block;
+        text-align: center;
+    }
+
 
 }
 
