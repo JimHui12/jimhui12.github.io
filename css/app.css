@@ -1638,6 +1638,35 @@ blockquote footer, blockquote small, blockquote .small {
         -moz-box-shadow: none;
         box-shadow: none;        
     }
+
+    .mobile-menu-hide * {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .site-main-menu li {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .site-main-menu li:first-child {
+        margin-top: 25px;
+    }
+
+    .site-main-menu li a,
+    .site-main-menu li a:hover {
+        color: #fff;
+        padding: 15px 10px;
+        margin: 0;
+    }
+
+    .site-main-menu li.active a:after,
+    .site-main-menu li a:hover:after {
+        width: 25px;
+        bottom: 8px;
+        background-color: #fff;
+    }
 }
 
 
