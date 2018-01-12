@@ -1567,6 +1567,11 @@ blockquote footer, blockquote small, blockquote .small {
         padding: 15px;
     }
 
+    .page-content,
+    .single-page-content .content-area .page-content {
+        padding: 30px 30px 50px;
+    }
+
 }
 
 
