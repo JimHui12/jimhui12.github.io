@@ -1600,7 +1600,15 @@ blockquote footer, blockquote small, blockquote .small {
         text-align: center;
     }
 
+    .section-title {
+        display: inline-block;
+        position: relative;
+        font-size: 38px;
+    }
 
+    .section-title:after {
+        display: none;
+    }
 }
 
 
