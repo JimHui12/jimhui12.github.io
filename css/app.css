@@ -1343,6 +1343,20 @@ body > footer .copyrights {
     background-color: #2eca7f;
 }
 
+.testimonials.owl-carousel .owl-nav .owl-prev:before,
+.testimonials.owl-carousel .owl-nav .owl-next:before {
+    position: relative;
+    margin: 2px;
+    width: 22px;
+    height: 22px;
+    font-family: FontAwesome;
+    font-size: 21px;
+    line-height: 22px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
 
 
 /* ============================================================================= 
