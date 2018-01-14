@@ -1375,6 +1375,32 @@ body > footer .copyrights {
     margin: 0;
 }
 
+.portfolio-block {
+    padding-top: 30px;
+}
+
+.ajax-page-page-content img {
+    max-width: 100%;
+}
+
+.portfolio-page-video,
+.portfolio-page-carousel,
+.portfolio-page-image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Tags Block*/
 .tags-block {
