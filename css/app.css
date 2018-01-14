@@ -1332,7 +1332,38 @@ body > footer .copyrights {
     background-color: #fff;
 }
 
+.ajax-page-wrapper {
+    padding: 20px 60px 30px;
+}
 
+.ajax-page-nav {
+    text-align: right;
+}
+
+.ajax-page-nav > div.nav-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.ajax-page-nav > div.nav-item a{
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    color: #9e9e9e;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+}
+
+.ajax-page-nav > div.nav-item a:hover {
+    color: #2eca7f;
+}
+
+.ajax-page-nav > div.nav-item a i {
+    line-height: 42px;
+    font-size: 22px;
+}
 
 
 
