@@ -1310,6 +1310,28 @@ body > footer .copyrights {
 /* ============================================================================= 
 9. Portfolio Full info page
 ============================================================================= */
+.page-ajax-loaded {
+    position: fixed;
+    background-color: #fff;
+    padding: 10px 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.page-ajax-loaded:empty {
+    display: none !important;
+}
+
+.ajax-page-content {
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+}
+
 
 
 
