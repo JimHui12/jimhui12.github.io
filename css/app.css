@@ -1690,6 +1690,18 @@ blockquote footer, blockquote small, blockquote .small {
         margin-bottom: 0;
     }
 
+    .blog-masonry.three-columns .item {
+        width: 50%;
+    }
+
+    @media only screen and (max-width: 769px) {
+        .portfolio-grid figure {
+            width: 50%;
+        }
+
+        
+    }
+
 }
 
 
