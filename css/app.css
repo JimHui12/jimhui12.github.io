@@ -247,6 +247,21 @@ textarea.form-control, textarea.form-control:focus {
     color: #2eca7f;
 }
 
+.no-padding {
+    padding: 0;
+}
+
+.subpage-block {
+    margin-bottom: 30px;
+}
+
+.text-rotation {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
 
 
 
