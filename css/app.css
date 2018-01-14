@@ -1706,6 +1706,15 @@ blockquote footer, blockquote small, blockquote .small {
         .home-page-description {
             font-size: 18px;
         }
+
+        .info-list {
+            margin-top: 20px;
+        }
+
+        .start-page-content .page-header {
+            padding: 50px 30px;
+            margin: 0;
+        }
     }
 
 }
