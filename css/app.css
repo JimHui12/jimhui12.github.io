@@ -1365,8 +1365,15 @@ body > footer .copyrights {
     font-size: 22px;
 }
 
+.ajax-page-title {
+    padding-top: 10px;
+    text-align: center;
+}
 
-
+.ajax-page-title h1 {
+    display: inline-block;
+    margin: 0;
+}
 
 
 /* Tags Block*/
