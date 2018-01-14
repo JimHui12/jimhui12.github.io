@@ -1739,7 +1739,15 @@ blockquote footer, blockquote small, blockquote .small {
             font-size: 33px;
         }
 
-        
+        .blog-post-content {
+            padding: 0;
+            margin: 30px 0 0;
+        }
+
+        .blog-masonry.two-columns .item,
+        .blog-masonry.three-columns .item {
+            width: 100%;
+        }
     }
 
 }
