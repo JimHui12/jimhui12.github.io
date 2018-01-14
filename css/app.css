@@ -1715,6 +1715,31 @@ blockquote footer, blockquote small, blockquote .small {
             padding: 50px 30px;
             margin: 0;
         }
+
+        .start-page-content .page-header .photo {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .start-page-content .page-header .title-block h1 {
+            margin-top: 25px;
+            font-size: 44px;
+            line-height: 1.2em;
+        }
+
+        .start-page-content .page-header .title-block .sp-subtitle {
+            margin-top: 15px;
+        }
+
+        .custom-page-content .page-header {
+            padding: 15px 30px;
+        }
+
+        .custom-page-content .page-header h2 {
+            font-size: 33px;
+        }
+
+        
     }
 
 }
