@@ -1400,6 +1400,42 @@ body > footer .copyrights {
     line-height: 30px;
 }
 
+.portfolio-page-carousel .owl-nav .owl-prev {
+    position: absolute;
+    margin-left: -50px;
+    left: 0;
+}
+
+.portfolio-page-carousel:hover .owl-nav .owl-prev {
+    margin-left: 0;
+}
+
+.portfolio-page-carousel .owl-nav .owl-next {
+    position: absolute;
+    margin-right: -50px;
+    right: 0;
+}
+
+.portfolio-page-carousel:hover .owl-nav .owl-next {
+    margin-left: 0;
+}
+
+.portfolio-page-carousel .owl-nav .owl-prev:before {
+    content: "\f104";
+}
+
+.portfolio-page-carousel .owl-nav .owl-next:before {
+    content: "\f105";
+}
+
+
+
+
+
+
+
+
+
 
 /* ============================================================================= 
 9. Portfolio Full info page
