@@ -1680,6 +1680,16 @@ blockquote footer, blockquote small, blockquote .small {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .lm-pricing .lm-package {
+        max-width: 400px;
+        margin: 0 auto 25px;
+    }
+
+    .lm-pricing .lm-package-wrap:last-child .lm-package:last-child {
+        margin-bottom: 0;
+    }
+
 }
 
 
