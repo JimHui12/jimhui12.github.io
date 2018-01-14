@@ -243,6 +243,18 @@ textarea.form-control, textarea.form-control:focus {
     border-bottom: 1px solid #e0e0e0;
 }
 
+.form-group-with-icon.form-group-focus i {
+    color: #2eca7f;
+}
+
+
+
+
+
+
+
+
+
 body > footer{
     position: fixed;
     bottom: 0;
