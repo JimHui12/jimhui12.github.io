@@ -127,7 +127,68 @@ img{
     font-family: 'Roboto', Helvetica, sans-serif;    
 }
 
+textarea.form-control, textarea.form-control:focus {
+    height: auto;
+}
 
+.form-control + .form-control-border {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #2eca7f;
+    height: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus + .form-control-border {
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.has-error .form-control + .form-control-border {
+    background: #ff4c4c;
+}
+
+.form-control label {
+    opacity: 0.4;
+    position: absolute;
+    top: 9px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #424242;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;    
+}
+
+.form-group.form-group-focus label {
+    top: -12px;
+    font-size: 0.8em;
+    z-index: 3;
+}
+
+/* Placeholders */
+.form-control::-moz-placeholder {
+    color: #9e9e9e;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #9e9e9e;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #9e9e9e;
+}
 
 
 body > footer{
