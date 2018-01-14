@@ -1357,6 +1357,16 @@ body > footer .copyrights {
     cursor: pointer;
 }
 
+.testimonials.owl-carousel .owl-nav .owl-prev:before {
+    content: "\f104";
+}
+
+.testimonials.owl-carousel .owl-nav .owl-next:before {
+    content: "\f105";
+}
+
+
+
 
 
 /* ============================================================================= 
