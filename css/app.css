@@ -1307,6 +1307,44 @@ body > footer .copyrights {
     margin: 15px 0 30px;
 }
 
+
+
+
+/* ============================================================================= 
+8. Sliders
+============================================================================= */
+/* Testimonials Carousel */
+.testimonials.owl-carousel .owl-nav {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.testimonials.owl-carousel .owl-nav .owl-prev {
+    margin-right: 3px;
+}
+
+.testimonials.owl-carousel .owl-nav .owl-prev,
+.testimonials.owl-carousel .owl-nav .owl-next {
+    display: inline-block;
+    color: #555;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;    
+}
+
+.testimonials.owl-carousel .owl-nav .owl-prev:hover,
+.testimonials.owl-carousel .owl-nav .owl-next:hover {
+    color: #fff;
+    background-color: #2eca7f;
+}
+
+
+
 /* ============================================================================= 
 9. Portfolio Full info page
 ============================================================================= */
