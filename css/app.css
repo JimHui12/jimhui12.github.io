@@ -93,6 +93,41 @@ img{
     visibility: visible;
 }
 
+/* Form controls*/
+.form-group {
+    position: relative;
+    margin: 0 0 25px;
+}
+
+.form-control,
+.form-control:focus {
+    height: 42px;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background: transparent;
+    text-align: left;
+    color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: 'Roboto', Helvetica, sans-serif;    
+}
+
+
 
 
 body > footer{
