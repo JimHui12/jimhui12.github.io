@@ -1391,7 +1391,24 @@ body > footer .copyrights {
     margin-bottom: 20px;
 }
 
+.project-general-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px;
+}
 
+.project-general-info li {
+    margin: 0 0 10px;
+}
+
+.project-general-info .fa {
+    color: #2eca7f;
+    margin-right: 5px;
+}
+
+.project-general-info p {
+    margin: 0;
+}
 
 
 
