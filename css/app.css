@@ -1699,7 +1699,13 @@ blockquote footer, blockquote small, blockquote .small {
             width: 50%;
         }
 
-        
+        .home-page-block h2{
+            font-size: 50px;
+        }
+
+        .home-page-description {
+            font-size: 18px;
+        }
     }
 
 }
