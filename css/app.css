@@ -1667,6 +1667,19 @@ blockquote footer, blockquote small, blockquote .small {
         bottom: 8px;
         background-color: #fff;
     }
+
+    .home-page-block h2 {
+        font-size: 60px;
+    }
+
+    .home-page-description {
+        font-size: 18px;
+    }
+
+    .ajax-page-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 
