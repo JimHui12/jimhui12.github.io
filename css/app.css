@@ -363,8 +363,37 @@ body > footer .copyrights {
     transform: translate(-50%,-50%,0);
 }
 
+.preloader-spinner {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 56px;
+    height: 56px;
+}
 
+.preloader-spinner:before,
+.preloader-spinner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid;
+}
 
+.preloader-spinner:before {
+    opacity: 0.2;
+}
+
+.preloader-spinner:after {
+    border-color: transparent;
+    border-top-color: #2eca7f;
+    -webkit-animation: rotation 0.82s infinite cubic-bezier(0.6,0.3,0.3,0.6);
+    animation: rotation 0.82s infinite cubic-bezier(0.6,0.3,0.3,0.6);   
+}
 
 
 
