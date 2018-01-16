@@ -522,6 +522,32 @@ body > footer .copyrights {
     display: block;
 }
 
+.section-with-bg {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section-without-bg {
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.section-padding-0 {
+    padding: 0;
+}
+
+
+
+
 /* ============================================================================= 
 5. Site header (Panel with logo & navigation)
 ============================================================================= */
@@ -539,7 +565,7 @@ body > footer .copyrights {
     
 }
 
-.header *{
+.header * {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -596,6 +622,7 @@ body > footer .copyrights {
     position: relative;
 }
 
+/* Main menu */
 .site-nav {
     float: right;     
 }
