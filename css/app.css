@@ -395,6 +395,25 @@ body > footer .copyrights {
     animation: rotation 0.82s infinite cubic-bezier(0.6,0.3,0.3,0.6);   
 }
 
+@-webkit-keyframes rotation {
+    0%
+    {
+        -webkit-transform: rotate(0deg)
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }100%{
+        transform: rotate(360deg)
+    }
+}
+
+
 
 
 /* ============================================================================= 
@@ -421,7 +440,7 @@ body > footer .copyrights {
     backface-visibility: hidden;    
 }
 
-.pt-page{
+.pt-page {
     width: 100%;
     max-width: 1032px;
     height: 0;
@@ -481,6 +500,27 @@ body > footer .copyrights {
     overflow: auto;
 }
 
+.pt-message {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #da475c;
+    color: #fff;
+    text-align: center;
+}
+
+.pt-message p {
+    margin: 0;
+    line-height: 60px;
+    font-size: 26px;
+}
+
+.no-cssanimations .pt-message {
+    display: block;
+}
 
 /* ============================================================================= 
 5. Site header (Panel with logo & navigation)
