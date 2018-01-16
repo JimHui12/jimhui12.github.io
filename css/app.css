@@ -266,6 +266,32 @@ textarea.form-control, textarea.form-control:focus {
 
 
 
+/* buttons */
+.btn-primary,
+.btn-secondary,
+button, input[type="button"], input[type="submit"] {
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.8;
+    padding: 0 1.5em;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+button, input[type="button"], input[type="submit"] {
+    background-color: #2eca7f;
+    color: #fff;
+    border: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
 
 
 
