@@ -103,7 +103,21 @@ setTimeout(function(){
 })
 .scrollTop(0);
 
+// On Document Load
+$(document).on('ready', function() {
+    // Initialize Portfolio grid
+    var $portfolio_container = $("#portfolio-grid");
 
+    $portfolio_container.imageLoaded(function () {
+        setTimeout(function(){
+            protfolio_init(this);
+        }, 500);
+    })
+
+    // Portfolio hover effect init
+    
+
+})
 
 
 
