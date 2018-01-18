@@ -115,7 +115,8 @@ $(document).on('ready', function() {
     })
 
     // Portfolio hover effect init
-    
+    $(' #portfolio_grid > figure ').each( function() { $(this).hoverdir(); } );
+
 
 })
 
