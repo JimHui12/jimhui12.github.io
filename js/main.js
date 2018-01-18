@@ -73,10 +73,35 @@
         }
     }
 
+    //On Window load & Resize
+    $(window)
+    .on('load', function() { //Load
+    // Animation on Page Loading
+    $(".preloader").fadeOut("slow");
 
+    // initializing page transition.
+    var ptPage = $('.subpages');
+    if (ptPage[0]) {
+        PageTransition.init({
+            menu: 'ul.site-main-menu',
+        });
+    }
+})
+.on('resize', function() { //Resize
+mobileMenuHide();
 
-
-
+setTimeout(function(){
+    subpages_resize();
+}, 500);
+})
+.scroll(function () {
+    if ($(window).scrollTop() < 20 ) {
+        $('.header').removeClass('sticked');
+    } else {
+        $('.header').addClass('sticked');
+    }
+})
+.scrollTop(0);
 
 
 
