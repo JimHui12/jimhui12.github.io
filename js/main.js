@@ -65,7 +65,13 @@
         });
     });
 
-    
+    // Hide Mobile menu
+    function mobileMenuHide() {
+        var windowWidth = $(window).width();
+        if (windowWidth < 1024) {
+            $('#site_header').addClass('mobile-menu-hide');
+        }
+    }
 
 
 
