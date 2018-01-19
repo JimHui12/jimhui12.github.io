@@ -123,6 +123,14 @@ $(document).on('ready', function() {
         $container.masonry();
     }, 500);
 
+    // Mobile menu
+    $('.menu-toggle').on("click", function () {
+        $('#site_header').toggleClass('mobile-menu-hide');
+    });
+
+    
+
+
 })
 
 
