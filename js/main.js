@@ -138,7 +138,32 @@ $(document).on('ready', function() {
        $('#blog-sidebar').toggleClass('open');
    });
 
-   
+   // Testimonials Slider
+   $(".testimonials.owl-carousel").owlCarousel({
+        nav: true, // Show next/prev buttons.
+        item: 3, // The number of items you want to see on the screen.
+        loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
+        navText: false,
+        margin: 25,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 1,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 2,
+            },
+            1200 : {
+                item: 2,
+            }
+        }
+   });
+
 
 
 
