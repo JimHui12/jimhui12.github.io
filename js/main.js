@@ -117,6 +117,11 @@ $(document).on('ready', function() {
     // Portfolio hover effect init
     $(' #portfolio_grid > figure ').each( function() { $(this).hoverdir(); } );
 
+    // Blog grid init
+    setTimeout(function(){
+        var $container = $(".blog-masonry");
+        $container.masonry();
+    }, 500);
 
 })
 
