@@ -128,7 +128,12 @@ $(document).on('ready', function() {
         $('#site_header').toggleClass('mobile-menu-hide');
     });
 
-    
+   // Mobile menu hide on main menu item click
+   $('.site-main-menu').on("click", "a", function (e) {
+       mobileMenuHide();
+   });
+
+   
 
 
 })
