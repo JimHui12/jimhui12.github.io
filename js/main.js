@@ -133,7 +133,13 @@ $(document).on('ready', function() {
        mobileMenuHide();
    });
 
+   // Sidebar toggle
+   $('sidebar-toggle').on("click", function () {
+       $('#blog-sidebar').toggleClass('open');
+   });
+
    
+
 
 
 })
