@@ -178,6 +178,16 @@ $(document).on('ready', function() {
         animateIn: 'zoomIn'
     }); 
 
+    // Lightbox init
+    $('body').magnificPopup({
+        delegate: 'a.lightbox',
+        type: 'image',
+        removalDelay: 300,
+
+        
+
+    });
+
     
 
 
