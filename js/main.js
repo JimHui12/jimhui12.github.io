@@ -184,7 +184,21 @@ $(document).on('ready', function() {
         type: 'image',
         removalDelay: 300,
 
-        
+		// Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade',
+        image: {
+            // options for image content type
+            titleSrc: 'title',
+            gallery: {
+                enabled: true
+            },
+        },
+
+        iframe: {
+            
+        }
+
 
     });
 
