@@ -226,8 +226,11 @@ $(document).on('ready', function() {
             srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".           
         },
 
-
-
+        callbacks: {
+            markupParse: function(template, values, item) {
+                values.title = item.el.attr('title');
+            }
+        },
     });
 
     
