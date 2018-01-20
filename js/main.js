@@ -233,6 +233,18 @@ $(document).on('ready', function() {
         },
     });
 
+    $('.ajax-page-load-link').magnificPopup({
+        type: 'ajax',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true
+        },
+    });
+
+    
+
+
     
 
 
