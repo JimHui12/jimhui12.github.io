@@ -211,7 +211,13 @@ $(document).on('ready', function() {
 					// id: function(url) { return 'parsed id'; }
 
                     src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
-                }
+                },
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: '/',
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                },
+                
             }
         
         }
