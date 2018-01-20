@@ -242,7 +242,21 @@ $(document).on('ready', function() {
         },
     });
 
-    
+    //Form Controls
+    $('.form-control')
+    .val('')
+    .on("focusin", function(){
+        $(this).parent('.form-group').addClass('form-group-focus');
+
+    })
+    .on("focusout", function(){
+        if($(this).val().length === 0) {
+            $(this).parent('.form-group').removeClass('form-group-focus');
+
+        }
+    });
+
+
 
 
     
