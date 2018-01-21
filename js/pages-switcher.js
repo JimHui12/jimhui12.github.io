@@ -8,17 +8,22 @@
 var PageTransitions = (function ($, options) {
     "use strict";
     var defaultStartPage = "home",
-    sectionContainer = $(".subpages"),
-    isAnimating = false,
-    endCurrentPage = true,
-    endNextPage = false,
-    windowArea = $(window),
-    animEndEventNames = {
-        'WebkitAnimation'   : 'webkitAnimationEnd',
-        'OnAnimation'       : 'oAnimationEnd',
-        'msAnimation'       : 'MsAnimationEnd',
-        'animation'         : 'animationend'
-    },
+        sectionContainer = $(".subpages"),
+        isAnimating = false,
+        endCurrentPage = true,
+        endNextPage = false,
+        windowArea = $(window),
+        animEndEventNames = {
+            'WebkitAnimation'   : 'webkitAnimationEnd',
+            'OnAnimation'       : 'oAnimationEnd',
+            'msAnimation'       : 'MsAnimationEnd',
+            'animation'         : 'animationend'
+        },
 
-    
+        // animation end event name
+        animEndEventName = animEndEventNames[Modernizr.prefixed('animation')],
+
+        
+
+
 })
