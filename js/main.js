@@ -252,24 +252,14 @@ $(document).on('ready', function() {
     .on("focusout", function(){
         if($(this).val().length === 0) {
             $(this).parent('.form-group').removeClass('form-group-focus');
-
         }
     });
 
+    //Google Maps
+    $("#map").googleMap();
+    $("#map").addMarker({
+        address: "Brisbane"
+    });
+});
 
-
-
-    
-
-
-
-})
-
-
-
-
-
-
-
-
-})
+})(jQuery);
