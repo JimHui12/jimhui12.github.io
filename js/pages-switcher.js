@@ -40,6 +40,22 @@ var PageTransitions = (function ($, options) {
                 $('section[data-id]='+ pageStart + ']').addClass('pt-page-current');
             }
         });
+
+        // Adding click event to main menu link
+        $('.pt-trigger').on("click", function (e) {
+            e.preventDefault();
+            if (isAnimating) {
+                return false;
+            }
+            var pageTrigger = $(this);
+            
+            activeMenuItem( pageTrigger );
+            
+            Animate( pageTrigger );
+            
+            location.hash = $(this).attr('href');
+        });
+
     }
 
 
