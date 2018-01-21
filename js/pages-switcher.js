@@ -33,6 +33,13 @@ var PageTransitions = (function ($, options) {
             var $page = $(this);
             $page.data('originalClassList', $page.attr('class'));
         });
+
+        // Get all the .pt-wrapper div which is the parent for all pt-div
+        sectionContainer.each( function() {
+            if (location.hash === "") {
+                $('section[data-id]='+ pageStart + ']').addClass('pt-page-current');
+            }
+        });
     }
 
 
