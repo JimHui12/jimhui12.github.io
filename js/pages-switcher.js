@@ -25,7 +25,15 @@ var PageTransitions = (function ($, options) {
 
         // support css animations
         support = Modernizr.cssanimations;
-         
+    
+    function init(options) {
+        
+        // Get all the .pt-page sections.
+        $('.pt-page').each( function() {
+            var $page = $(this);
+            $page.data('originalClassList', $page.attr('class'));
+        });
+    }
 
 
 })
