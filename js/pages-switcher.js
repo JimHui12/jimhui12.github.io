@@ -97,7 +97,20 @@ var PageTransitions = (function ($, options) {
         if ( !item ) {
             return false;
         }
+
+        var navLink = $(item);
+        navLink = navLink['0'];
+        navLink = $(navLink.parentNode);
+
+        if(navLink) {
+            $('ul.site-main-menu li').removeClass('active');
+            navLink.addClass('active');
+        }
     }
 
+    
+
+
+    
 
 })
