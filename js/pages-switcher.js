@@ -118,6 +118,15 @@ var PageTransitions = (function ($, options) {
             $('body').addClass('ajax-page-visible');
         }
 
+        function hideContent() {
+            $('#page-ajax-loaded').addClass('rotateOutDownRight closed');
+            $('body').removeClass('ajax-page-visible');
+            setTimeout(function(){
+                $('#page-ajax-loaed.closed').html('');
+                ajaxLoadedContent.hide();
+            }, 500);
+        }
+
     }
 
 
