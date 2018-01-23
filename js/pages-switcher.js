@@ -138,12 +138,12 @@ var PageTransitions = (function ($, options) {
         });
 
         $(document)
-            .on("click",".site-main-menu, #ajax-page-close-button", function (e) { // Hide Ajax Loaded Page on Navigation cleck and Close button
+            .on("click",".site-main-menu, #ajax-page-close-button", function (e) { //Hide Ajax Loaded Page on Navigation on Navigation cleck and Close button
                 e.preventDefault();
                 hideContent();
                 location.hash = location.hash.split('/')[0];
             })
-            .on("click",".ajax-page-load", function() { // Show Ajax Loaded P
+            .on("click",".ajax-page-load", function() { // Show Ajax Loaded Page
                 var hash = location.hash.split('/')[0] + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
                 location.hash = hash;
                 showContent();
@@ -151,6 +151,10 @@ var PageTransitions = (function ($, options) {
                 return false;
             });
 
+    }
+
+    function Animate($pageTrigger, gotoPage) {
+        
     }
 
 
