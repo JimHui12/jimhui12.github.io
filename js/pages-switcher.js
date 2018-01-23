@@ -82,10 +82,21 @@ var PageTransitions = (function ($, options) {
 
         $('body').append('<div id="page-ajax-loader" class="page-ajax-loaded animated rotateInDownRight"></div>');
         ajaxLoader();
+    }
 
+    function getActiveSection() {
+        if(location.hash === ""){
+            return location.hash = defaultStartPage;
+        }
+        else {
+            return location.hash;
+        }
+    }
 
-
-
+    function activeMenuItem(item) {
+        if ( !item ) {
+            return false;
+        }
     }
 
 
