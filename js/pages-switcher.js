@@ -160,7 +160,19 @@ var PageTransitions = (function ($, options) {
             $pageTrigger.data('animation',animNumber);
         }
 
-        
+        var animation = $pageTrigger.data('animation').toString(),
+            gotoPage, inClass, outClass, selectedAnimNumber;
+
+          // Check if the delimiter '-' is present then create an animation array list.
+        if(animation.indexOf('-') != -1) {
+            var randomAnimList = animation.split('-');
+            selectedAnimNumber = parseInt(randomAnimList[(Math.floor(Math.random() * randomAnimList.length))]);
+        }
+        else {
+            selectedAnimNumber = parseInt(animation);
+        }    
+
+
     }
 
 
