@@ -70,7 +70,18 @@ var PageTransitions = (function ($, options) {
             }
         };
 
+        var menu = options.menu,
+        pageStart = getActiveSection();
 
+        location.hash = pageStart;
+        var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
+
+        activeMenuItem(menuLink);
+
+        Animate(menuLink);
+
+        $('body').append('<div id="page-ajax-loader" class="page-ajax-loaded animated rotateInDownRight"></div>');
+        ajaxLoader();
 
 
 
