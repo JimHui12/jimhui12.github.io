@@ -154,6 +154,12 @@ var PageTransitions = (function ($, options) {
     }
 
     function Animate($pageTrigger, gotoPage) {
+        // Checking for 'data-animation' attribute.
+        if (!($pageTrigger.attr('data-animation'))) {
+            var animNumber = parseInt(Math.floor(Math.random() * 67) + 1);
+            $pageTrigger.data('animation',animNumber);
+        }
+
         
     }
 
