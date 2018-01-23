@@ -54,7 +54,26 @@ var PageTransitions = (function ($, options) {
             Animate( pageTrigger );
             
             location.hash = $(this).attr('href');
+        
         });
+
+        window.onhashchange = function(event) {
+            if(location.hash) {
+                if (isAnimating) {
+                    return false;
+                }
+                var menuLink = $(menu+' a[href*="'+location.hash.split('/')[0]+'"]');
+                activeMenuItem( menuLink );
+                Animate(menuLink);
+
+                ajaxLoader();
+            }
+        };
+
+
+
+
+
 
     }
 
