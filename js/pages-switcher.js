@@ -112,7 +112,12 @@ var PageTransitions = (function ($, options) {
         // Check for hash value in URL
         var ajaxLoadedContent = $('#page-ajax-loaded');
 
-        
+        function showContent() {
+            ajaxLoadedContent.removeClass('rotateOutDownRight closed');
+            ajaxLoadedContent.show();
+            $('body').addClass('ajax-page-visible');
+        }
+
     }
 
 
