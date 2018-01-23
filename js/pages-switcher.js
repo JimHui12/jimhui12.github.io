@@ -108,7 +108,12 @@ var PageTransitions = (function ($, options) {
         }
     }
 
-    
+    function ajaxLoader() {
+        // Check for hash value in URL
+        var ajaxLoadedContent = $('#page-ajax-loaded');
+
+        
+    }
 
 
     
