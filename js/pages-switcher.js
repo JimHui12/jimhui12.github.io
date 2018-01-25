@@ -291,7 +291,15 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromRight pt-page-delay200 pt-page-ontop';
                 outClass = 'pt-page-rotateRightSideFirst';
                 break;        
-        }
+            case 29:
+                inClass = 'pt-page-moveFromLeft pt-page-delay200 pt-page-ontop';
+                outClass = 'pt-page-rotateLeftSideFirst';
+                break;
+            case 30:
+                inClass = 'pt-page-moveFromTop pt-page-delay200 pt-page-ontop';
+                outClass = 'pt-page-rotateTopSideFirst';
+                break;        
+            }
 
 
     }
