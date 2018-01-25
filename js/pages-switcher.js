@@ -183,6 +183,9 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromRight';
                 outClass = 'pt-page-moveToLeft';
                 break;
+            case 2:
+                inClass = 'pt-page-moveFromLeft';
+                outClass = 'pt-page-moveToRight';
 
         }
 
