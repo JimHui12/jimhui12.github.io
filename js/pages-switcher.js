@@ -219,7 +219,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromLeftFade';
                 outClass = 'pt-page-moveToRightFade';
                 break;
-
+            case 11:
+                inClass = 'pt-page-moveFromBottomFade';
+                outClass = 'pt-page-moveToTopFade';
+                break;
+            case 12:
+                inClass = 'pt-page-moveFromTopFade';
+                outClass = 'pt-page-moveToBottomFade';
+                break;
         }
 
 
