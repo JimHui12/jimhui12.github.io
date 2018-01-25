@@ -178,7 +178,14 @@ var PageTransitions = (function ($, options) {
             return false;
         }
 
-        
+        switch(selectedAnimNumber) {
+            case 1:
+                inClass = 'pt-page-moveFromRight';
+                outClass = 'pt-page-moveToLeft';
+                break;
+
+        }
+
 
     }
 
