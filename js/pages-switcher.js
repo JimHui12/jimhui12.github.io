@@ -235,6 +235,16 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromLeft';
                 outClass = 'pt-page-moveToRightEasing pt-page-ontop';
                 break;
+            case 15:
+                inClass = 'pt-page-moveFromBottom';
+                outClass = 'pt-page-moveToTopEasing pt-page-ontop';
+                break;
+            case 16:
+                inClass = 'pt-page-moveFromTop';
+                outClass = 'pt-page-moveToBottomEasing pt-page-ontop';
+                break;            
+        
+        
         }
 
 
