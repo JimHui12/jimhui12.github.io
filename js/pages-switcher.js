@@ -267,6 +267,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-scaleUp pt-page-delay300';
                 outClass = 'pt-page-scaleDownUp';
                 break;
+            case 23:
+                inClass = 'pt-page-scaleUp';
+                outClass = 'pt-page-moveToLeft pt-page-ontop';
+                break;
+            case 24:
+                inClass = 'pt-page-scaleUp';
+                outClass = 'pt-page-moveToRight pt-page-ontop';
+                break;            
         
         }
 
