@@ -259,6 +259,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromTop pt-page-ontop';
                 outClass = 'pt-page-scaleDown';
                 break;
+            case 21:
+                inClass = 'pt-page-scaleUpDown pt-page-delay300';
+                outClass = 'pt-page-scaleDown';
+                break;
+            case 22:
+                inClass = 'pt-page-scaleUp pt-page-delay300';
+                outClass = 'pt-page-scaleDownUp';
+                break;
         
         }
 
