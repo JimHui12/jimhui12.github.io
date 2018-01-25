@@ -194,7 +194,15 @@ var PageTransitions = (function ($, options) {
             case 4:
                 inClass = 'pt-page-moveFromTop';
                 outClass = 'pt-page-moveToBottom';
-                
+                break;
+            case 5:
+                inClass = 'pt-page-moveFromRight pt-page-ontop';
+                outClass = 'pt-page-fade';
+                break;
+            case 6:
+                inClass = 'pt-page-moveFromLeft pt-page-ontop';
+                outClass = 'pt-page-fade';
+                break;
 
         }
 
