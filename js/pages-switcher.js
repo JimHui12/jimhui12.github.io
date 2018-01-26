@@ -307,7 +307,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-flipInLeft pt-page-delay500';
                 outClass = 'pt-page-flipOutRight';
                 break;            
-            
+            case 33:
+                inClass = 'pt-page-flipInRight pt-page-delay500';
+                outClass = 'pt-page-flipOutLeft';
+                break;
+            case 34:
+                inClass = 'pt-page-flipInBottom pt-page-delay500';
+                outClass = 'pt-page-flipOutTop';
+                break;    
             
             
             
