@@ -299,7 +299,24 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromTop pt-page-delay200 pt-page-ontop';
                 outClass = 'pt-page-rotateTopSideFirst';
                 break;        
-            }
+            case 31:
+                inClass = 'pt-page-moveFromBottom pt-page-delay200 pt-page-ontop';
+                outClass = 'pt-page-rotateBottomSideFirst';
+                break;
+            case 32:
+                inClass = 'pt-page-flipInLeft pt-page-delay500';
+                outClass = 'pt-page-flipOutRight';
+                break;            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
 
 
     }
