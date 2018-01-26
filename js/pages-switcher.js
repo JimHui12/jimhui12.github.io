@@ -323,7 +323,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-scaleUp';
                 outClass = 'pt-page-rotateFall pt-page-ontop';
                 break;            
-            
+            case 37:
+                inClass = 'pt-page-rotateInNewspaper pt-page-delay500';
+                outClass = 'pt-page-rotateOutNewspaper';
+                break;
+            case 38:
+                inClass = 'pt-page-moveFromRight';
+                outClass = 'pt-page-rotatePushLeft';
+                break;            
             
             
             
