@@ -339,7 +339,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-moveFromBottom';
                 outClass = 'pt-page-rotatePushTop';
                 break;            
-            
+            case 41:
+                inClass = 'pt-page-moveFromTop';
+                outClass = 'pt-page-rotatePushBottom';
+                break;
+            case 42:
+                inClass = 'pt-page-rotatePullRight pt-page-delay180';
+                outClass = 'pt-page-rotatePushLeft';
+                break;            
             
             
             
