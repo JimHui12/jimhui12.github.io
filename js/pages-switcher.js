@@ -355,7 +355,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-rotatePullBottom pt-page-delay180';
                 outClass = 'pt-page-rotatePushTop';
                 break;            
-            
+            case 45:
+                inClass = 'pt-page-rotatePullTop pt-page-delay180';
+                outClass = 'pt-page-rotatePushBottom';
+                break;
+            case 46:
+                inClass = 'pt-page-moveFromRightFade';
+                outClass = 'pt-page-rotateFoldLeft';
+                break;            
             
             
         }
