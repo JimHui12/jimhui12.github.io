@@ -403,6 +403,26 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-rotateRoomTopIn';
                 outClass = 'pt-page-rotateRoomTopOut pt-page-ontop';
                 break;        
+            case 57:
+                inClass = 'pt-page-rotateRoomBottomIn';
+                outClass = 'pt-page-rotateRoomBottomOut pt-page-ontop';
+                break;
+            case 58:
+                inClass = 'pt-page-rotateCubeLeftIn';
+                outClass = 'pt-page-rotateCubeLeftOut pt-page-ontop';
+                break;            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             }
 
 
