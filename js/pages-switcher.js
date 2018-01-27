@@ -419,7 +419,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-rotateCubeTopIn';
                 outClass = 'pt-page-rotateCubeTopOut pt-page-ontop';
                 break;           
-            
+            case 61:
+                inClass = 'pt-page-rotateCubeBottomIn';
+                outClass = 'pt-page-rotateCubeBottomOut pt-page-ontop';
+                break;
+            case 62:
+                inClass = 'pt-page-rotateCarouselLeftIn';
+                outClass = 'pt-page-rotateCarouselLeftOut pt-page-ontop';
+                break;            
             
             
             
