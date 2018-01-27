@@ -370,6 +370,14 @@ var PageTransitions = (function ($, options) {
             case 48:
                 inClass = 'pt-page-moveFromBottomFade';
                 outClass = 'pt-page-rotateFoldTop';
+                break;
+            case 49:
+                inClass = 'pt-page-moveFromTopFade';
+                outClass = 'pt-page-rotateFoldBottom';
+                break;
+            case 50:
+                inClass = 'pt-page-rotateUnfoldLeft';
+                outClass = 'pt-page-moveToRightFade';
                 break;            
             
         }
