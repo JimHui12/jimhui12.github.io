@@ -395,7 +395,15 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-rotateRoomLeftIn';
                 outClass = 'pt-page-rotateRoomLeftOut pt-page-ontop';
                 break;            
-        }
+            case 55:
+                inClass = 'pt-page-rotateRoomRightIn';
+                outClass = 'pt-page-rotateRoomRightOut pt-page-ontop';
+                break;
+            case 56:
+                inClass = 'pt-page-rotateRoomTopIn';
+                outClass = 'pt-page-rotateRoomTopOut pt-page-ontop';
+                break;        
+            }
 
 
     }
