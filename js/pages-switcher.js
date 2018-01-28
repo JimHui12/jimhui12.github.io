@@ -457,10 +457,14 @@ var PageTransitions = (function ($, options) {
 
             tempPageIndex = currentPageId;
 
-        // Current page to be removed.
-        var $currentPage = $('section[data-id="' + currentPageId + '"]');
-            
+            // Current page to be removed.
+            var $currentPage = $('section[data-id="' + currentPageId + '"]');
 
+            // NEXT PAGE
+            currentPageId = gotoPage;
+    
+    
+    
     }
 
 
