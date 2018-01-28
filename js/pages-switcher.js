@@ -443,15 +443,12 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-rotateSidesIn pt-page-delay200';
                 outClass = 'pt-page-rotateSidesOut';
                 break;            
+            case 67:
+                inClass = 'pt-page-rotateSlideIn';
+                outClass = 'pt-page-rotateSlideOut';
+                break;            
             
-            
-            
-            
-            
-            
-            
-            
-            }
+        }
 
 
     }
