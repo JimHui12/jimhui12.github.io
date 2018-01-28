@@ -435,7 +435,14 @@ var PageTransitions = (function ($, options) {
                 inClass = 'pt-page-rotateCarouselTopIn';
                 outClass = 'pt-page-rotateCarouselTopOut pt-page-ontop';
                 break;            
-            
+            case 65:
+                inClass = 'pt-page-rotateCarouselBottomIn';
+                outClass = 'pt-page-rotateCarouselBottomOut pt-page-ontop';
+                break;
+            case 66:
+                inClass = 'pt-page-rotateSidesIn pt-page-delay200';
+                outClass = 'pt-page-rotateSidesOut';
+                break;            
             
             
             
