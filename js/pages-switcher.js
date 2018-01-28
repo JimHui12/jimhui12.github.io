@@ -462,7 +462,15 @@ var PageTransitions = (function ($, options) {
 
             // NEXT PAGE
             currentPageId = gotoPage;
-    
+            
+            // Check if the current page is same as the next page then do not do the animation
+            // else reset the 'isAnimatiing' flag
+            if (tempPageIndex != currentPageId) {
+                isAnimating = true;
+
+                $pageWrapper.data('current', currentPageId);
+                
+            }
     
     
     }
