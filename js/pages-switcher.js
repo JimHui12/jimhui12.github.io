@@ -469,6 +469,10 @@ var PageTransitions = (function ($, options) {
                 isAnimating = true;
 
                 $pageWrapper.data('current', currentPageId);
+
+                // Next page to be animated.
+
+                var $nextPage = $('section[data-id='+currentPageId+']').addClass('pt-page-current');
                 
             }
     
