@@ -473,7 +473,9 @@ var PageTransitions = (function ($, options) {
                 // Next page to be animated.
 
                 var $nextPage = $('section[data-id='+currentPageId+']').addClass('pt-page-current');
-                
+                windowArea.scrollTop(0);
+                var subpagesHeight = windowArea.height();
+                $(".subpages").height(subpagesHeight + 50); //50 is the bottom margin value of the pt-page, in the main.css file    
             }
     
     
