@@ -446,10 +446,18 @@ var PageTransitions = (function ($, options) {
             case 67:
                 inClass = 'pt-page-rotateSlideIn';
                 outClass = 'pt-page-rotateSlideOut';
-                break;            
-            
+                break;                        
         }
 
+        // This will get the pt-trigger elements parent wrapper div
+        var $pageWrapper = sectionsContainer,
+            currentPageId = $pageWrapper.data('current'), tempPageIndex,
+            linkhref = $pageTrigger.attr('href').split("#"),
+            gotoPage = linkhref[1];
+
+            tempPageIndex = currentPageId;
+
+            
 
     }
 
