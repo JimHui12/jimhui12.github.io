@@ -498,7 +498,14 @@ var PageTransitions = (function ($, options) {
                 });
 
             }
-    
+            else {
+                isAnimating = false;
+            }
+
+        // Check if the animation is supported by browser and reset the pages.    
+        if(!support) {
+            onEndAnimation($currentPage, $nextPage);
+        }    
     
     }
 
