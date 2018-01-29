@@ -509,6 +509,12 @@ var PageTransitions = (function ($, options) {
     
     }
 
+    function onEndAnimation($pageWrapper, $nextPage, $currentPage) {
+        var subpagesHeight = $nextPage.height();
+        $(".subpages").height(subpagesHeight + 50); //50 is the bottom margin value of the pt-page, in the main.css file
+        resetPage($nextPage, $currentPage);
+    }
+
 
     
 
