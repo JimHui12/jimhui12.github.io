@@ -520,5 +520,8 @@ var PageTransitions = (function ($, options) {
         $nextPage.attr('class', $nextPage.data('originalClassList') + ' pt-page-current');
     }
     
+    return {
+        init : init,
+    };
 
-})
+})(jQuery);
