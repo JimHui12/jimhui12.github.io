@@ -487,6 +487,16 @@ var PageTransitions = (function ($, options) {
                     }
                 });
 
+                $nextPage.addClass(inClass).on(animEndEventName, function() {
+                    $nextPage.off(animEndEventName);
+                    endNextPage = true;
+                    if(endCurrentPage) {
+                        onEndAnimation($pageWrapper, $nextPage, $currentPage);
+                        endNextPage = false;
+                        isAnimating = false;
+                    }
+                });
+
             }
     
     
