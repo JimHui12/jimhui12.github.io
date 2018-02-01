@@ -82,7 +82,7 @@
     // initializing page transition.
     var ptPage = $('.subpages');
     if (ptPage[0]) {
-        PageTransition.init({
+        PageTransitions.init({
             menu: 'ul.site-main-menu',
         });
     }
@@ -105,14 +105,14 @@ setTimeout(function(){
 
 // On Document Load
 $(document).on('ready', function() {
-    // Initialize Portfolio grid
-    var $portfolio_container = $("#portfolio-grid");
+	// Initialize Portfolio grid
+	var $portfolio_container = $("#portfolio-grid");
 
-    $portfolio_container.imageLoaded(function () {
-        setTimeout(function(){
-            protfolio_init(this);
-        }, 500);
-    })
+	$portfolio_container.imagesLoaded(function () {
+		setTimeout(function(){
+			portfolio_init(this);
+		}, 500);
+	});
 
     // Portfolio hover effect init
     $(' #portfolio_grid > figure ').each( function() { $(this).hoverdir(); } );
