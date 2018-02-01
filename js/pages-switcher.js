@@ -454,7 +454,7 @@ var PageTransitions = (function ($, options) {
             currentPageId = $pageWrapper.data('current'), tempPageIndex,
             linkhref = $pageTrigger.attr('href').split("#"),
             gotoPage = linkhref[1];
-
+            
             tempPageIndex = currentPageId;
 
             // Current page to be removed.
