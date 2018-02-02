@@ -36,7 +36,7 @@
         <!-- Profile Card -->
     
         <!-- Page Title --> 
-        <header id="site_header" class="header mobile_menu_hide sticked">
+        <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
                 <div class="site-title-block mobile_hidden">
                     <div class="site-title">Jianghua <span>Hui</span></div>
@@ -47,25 +47,26 @@
                     <!-- Site main menu -->
                     <ul id="nav" class="site-main-menu">
                         <li>
-                            <a class="pt-trigger" href="#home">Home</a>
+                            <a class="pt-trigger" href="#home" data-animation="62">Home</a>
                         </li>
                         <li>
-                            <a class="pt-trigger" href="#resume">Resume</a>
+                            <a class="pt-trigger" href="#resume" data-animation="62">Resume</a>
                         </li>
                         <li>
-                            <a class="pt-trigger" href="#services">Services</a>
+                            <a class="pt-trigger" href="#services" data-animation="62">Services</a>
                         </li>
                         <li>
-                            <a class="pt-trigger" href="#blog">Blog</a>
+                            <a class="pt-trigger" href="#blog" data-animation="62">Blog</a>
                         </li>
                         <li>
-                            <a class="pt-trigger" href="#contact">Contact</a>
+                            <a class="pt-trigger" href="#contact" data-animation="62">Contact</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </header>
+
         <div class="mobile-header mobile-visible">
             <div class="mobile-logo-container">
                 <div class="mobile-site-title">Jianghua Hui</div>
@@ -74,7 +75,7 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        <div id="main" class="site_main">
+        <div id="main" class="site-main">
             <div class="pt-wrapper">
                 <div class="subpages">
 
@@ -86,7 +87,7 @@
                                 <div class="row">
                                     <!-- Card Header Content Left -->
                                     <div class="col-sm-4 col-md-4 col-lg-4">
-                                        <div class="img-wrapper" onmouseover="showLink(this)" onmouseout="hideLink()">
+                                        <div class="photo" onmouseover="showLink(this)" onmouseout="hideLink()">
                                             <img src="img/photo.png" alt="John Doe Profile Image"/>
                                             <a id="git-link" href="https://github.com/JimHui12/jimhui12.github.io">My Github</a>
                                         </div>
@@ -111,31 +112,8 @@
                                                 <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                                                 <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-facebook"></i></a>
                                             
-            
-                                        </div>
-                                        
-                                        <div class="contact-modal">
-                                            <div class="modal-header">
-                                                <p>Your Information</p>
-                                                <span class="close" onClick="close-modal()">&times;</span>
-                                                <div class="clear"></div>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form action="#">
-                                                    <label for="name">Name:</label>
-                                                    <input type="text" id="name" placeholder="Your name..."><br>
-                                                    <label for="email">E-mail:</label>
-                                                    <input type="email" id="email" name="email" placeholder="Your Email..."><br>
-                                                    <label for="message">Message:</label>
-                                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="place your message here"></textarea>
-                                                </form>    
-                                            </div>
-                                            <div class="contact-button">
-                                                <button onClick="closeModal()"  id="closeModal">Close</button>
-                                            </div> 
                                         </div>                                                       
                                     </div>
-                                    <div class="clear"></div>
                                 </div>                
                             </div>
             
@@ -159,7 +137,7 @@
                                     </div>
             
                                     <!-- Card Body Content Right -->
-                                    <div class="col-right col-right-3 col-right4">    
+                                    <div class="col-sm-6 col-md-6 col-lg-6">    
                                         <ul class="info-list">
                                             <li><span class="title">Age</span><span class="value">25</span></li>
                                             <li><span class="title">Residence</span><span class="value">Australia</span></li>
@@ -167,7 +145,7 @@
                                             <li><span class="title">E-mail</span><span class="value"><a href=""></a></span></li>
                                             <li><span class="title">Phone</span><span class="value">+0123 123 456 789</span></li>
                                         </ul>
-                                        <div class="clear"></div>
+                                        
                                     </div>                                     
                                 </div>
                             </div>
@@ -429,9 +407,9 @@
 
                     <!-- Blog Subpage -->
                     <section class="pt-page" data-id="blog">
-                        <div class="section-inner custom-page-content   ">
+                        <div class="section-inner custom-page-content">
                             <div class="page-header color-1">
-                                <h2></h2>
+                                <h2>Blog</h2>
                             </div>
 
                             <div class="page-content">
@@ -441,7 +419,7 @@
                                     <div class="item">
                                         <div class="blod-card">
                                             <div class="media-block">
-                                                <a href="">
+                                                <a href="blog-post-1.html">
                                                     <img class="post-image img-responsive" src="" alt="blog-post-1" />
                                                     <div class="mask"></div>
                                                     <div class="post-date"><span class="day">6</span><span class="month">Dec</span></div>
@@ -451,7 +429,7 @@
                                                 <ul class="category">
                                                     <li><a href="">Travel</a></li>
                                                 </ul>
-                                                <a href=""><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
+                                                <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
                                             </div>
                                         </div>
                                     </div>
@@ -460,7 +438,7 @@
                                     <div class="item">
                                         <div class="blod-card">
                                             <div class="media-block">
-                                                <a href="">
+                                                <a href="blog-post-1.html">
                                                     <img class="post-image img-responsive" src="" alt="blog-post-1" />
                                                     <div class="mask"></div>
                                                     <div class="post-date"><span class="day">3</span><span class="month">Nov</span></div>
@@ -470,7 +448,7 @@
                                                 <ul class="category">
                                                     <li><a href="">jQuery</a></li>
                                                 </ul>
-                                                <a href=""><h4 class="blog-item-title">One Framework, Every Device</h4></a>
+                                                <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every Device</h4></a>
                                             </div>
                                         </div>
                                     </div>
@@ -479,7 +457,7 @@
                                     <div class="item">
                                         <div class="blod-card">
                                             <div class="media-block">
-                                                <a href="">
+                                                <a href="blog-post-1.html">
                                                     <img class="post-image img-responsive" src="" alt="blog-post-1" />
                                                     <div class="mask"></div>
                                                     <div class="post-date"><span class="day">12</span><span class="month">Oct</span></div>
@@ -487,9 +465,9 @@
                                             </div>
                                             <div class="post-info">
                                                 <ul class="category">
-                                                    <li><a href="">Sport</a></li>
+                                                    <li><a href="#">Sport</a></li>
                                                 </ul>
-                                                <a href=""><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
+                                                <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
                                             </div>
                                         </div>
                                     </div>
@@ -498,7 +476,7 @@
                                     <div class="item">
                                         <div class="blod-card">
                                             <div class="media-block">
-                                                <a href="">
+                                                <a href="blog-post-1.html">
                                                     <img class="post-image img-responsive" src="" alt="blog-post-1" />
                                                     <div class="mask"></div>
                                                     <div class="post-date"><span class="day">18</span><span class="month">Aug</span></div>
@@ -506,9 +484,9 @@
                                             </div>
                                             <div class="post-info">
                                                 <ul class="category">
-                                                    <li><a href="">CSS</a></li>
+                                                    <li><a href="#">CSS</a></li>
                                                 </ul>
-                                                <a href=""><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
+                                                <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
                                             </div>
                                         </div>
                                     </div>
@@ -627,7 +605,7 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <i class="fa fa-user"></i>
                                                     <label>Full Name</label>
-                                                    <input id="form-name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required.">
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required.">
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -635,7 +613,7 @@
                                                 <div class="form-group form-group-with-icon">
                                                     <i class="fa fa-envelope"></i>
                                                     <label>Email Address</label>
-                                                    <input id="form-name" type="text" name="name" class="form-control" placeholder required="required" data-error="Valid email is required.">
+                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required.">
                                                     <div class="form-control-border"></div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
