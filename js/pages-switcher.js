@@ -6,17 +6,17 @@
 */
 
 var PageTransitions = (function ($, options) {
-    "use strict";
+"use strict";
     var defaultStartPage = "home",
-        sectionContainer = $(".subpages"),
+        sectionsContainer = $(".subpages"),
         isAnimating = false,
         endCurrentPage = true,
         endNextPage = false,
         windowArea = $(window),
         animEndEventNames = {
             'WebkitAnimation'   : 'webkitAnimationEnd',
-            'OnAnimation'       : 'oAnimationEnd',
-            'msAnimation'       : 'MsAnimationEnd',
+            'OAnimation'        : 'oAnimationEnd',
+            'msAnimation'       : 'MSAnimationEnd',
             'animation'         : 'animationend'
         },
 
@@ -25,9 +25,9 @@ var PageTransitions = (function ($, options) {
 
         // support css animations
         support = Modernizr.cssanimations;
-    
+
     function init(options) {
-        
+
         // Get all the .pt-page sections.
         $('.pt-page').each( function() {
             var $page = $(this);
@@ -35,9 +35,9 @@ var PageTransitions = (function ($, options) {
         });
 
         // Get all the .pt-wrapper div which is the parent for all pt-div
-        sectionContainer.each( function() {
+        sectionsContainer.each( function() {
             if (location.hash === "") {
-                $('section[data-id]='+ pageStart + ']').addClass('pt-page-current');
+                $('section[data-id='+ pageStart +']').addClass('pt-page-current');
             }
         });
 
@@ -48,13 +48,13 @@ var PageTransitions = (function ($, options) {
                 return false;
             }
             var pageTrigger = $(this);
-            
+
             activeMenuItem( pageTrigger );
-            
+
             Animate( pageTrigger );
-            
+
             location.hash = $(this).attr('href');
-        
+
         });
 
         window.onhashchange = function(event) {
@@ -80,14 +80,14 @@ var PageTransitions = (function ($, options) {
 
         Animate(menuLink);
 
-        $('body').append('<div id="page-ajax-loader" class="page-ajax-loaded animated rotateInDownRight"></div>');
+        $('body').append('<div id="page-ajax-loaded" class="page-ajax-loaded animated rotateInDownRight"></div>');
         ajaxLoader();
     }
 
     function getActiveSection() {
-        if(location.hash === ""){
+        if(location.hash === "") {
             return location.hash = defaultStartPage;
-        }
+        } 
         else {
             return location.hash;
         }
@@ -101,7 +101,7 @@ var PageTransitions = (function ($, options) {
         var navLink = $(item);
         navLink = navLink['0'];
         navLink = $(navLink.parentNode);
-
+            
         if(navLink) {
             $('ul.site-main-menu li').removeClass('active');
             navLink.addClass('active');
@@ -122,7 +122,7 @@ var PageTransitions = (function ($, options) {
             $('#page-ajax-loaded').addClass('rotateOutDownRight closed');
             $('body').removeClass('ajax-page-visible');
             setTimeout(function(){
-                $('#page-ajax-loaed.closed').html('');
+                $('#page-ajax-loaded.closed').html('');
                 ajaxLoadedContent.hide();
             }, 500);
         }
@@ -130,7 +130,7 @@ var PageTransitions = (function ($, options) {
         var href = $('.ajax-page-load').each(function(){
             href = $(this).attr('href');
             if(location.hash == location.hash.split('/')[0] + '/' + href.substr(0,href.length-5)){
-                var toLoad = $(this).attr('href');
+                var toLoad =  $(this).attr('href');
                 showContent();
                 ajaxLoadedContent.load(toLoad);
                 return false;
@@ -138,22 +138,22 @@ var PageTransitions = (function ($, options) {
         });
 
         $(document)
-            .on("click",".site-main-menu, #ajax-page-close-button", function (e) { //Hide Ajax Loaded Page on Navigation on Navigation cleck and Close button
+            .on("click",".site-main-menu, #ajax-page-close-button", function (e) { // Hide Ajax Loaded Page on Navigation cleck and Close button
                 e.preventDefault();
                 hideContent();
                 location.hash = location.hash.split('/')[0];
             })
-            .on("click",".ajax-page-load", function() { // Show Ajax Loaded Page
+            .on("click",".ajax-page-load", function () { // Show Ajax Loaded Page
                 var hash = location.hash.split('/')[0] + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
                 location.hash = hash;
                 showContent();
 
                 return false;
             });
-
     }
 
     function Animate($pageTrigger, gotoPage) {
+
         // Checking for 'data-animation' attribute.
         if (!($pageTrigger.attr('data-animation'))) {
             var animNumber = parseInt(Math.floor(Math.random() * 67) + 1);
@@ -163,14 +163,14 @@ var PageTransitions = (function ($, options) {
         var animation = $pageTrigger.data('animation').toString(),
             gotoPage, inClass, outClass, selectedAnimNumber;
 
-          // Check if the delimiter '-' is present then create an animation array list.
+         // Check if the delimiter '-' is present then create an animation array list.
         if(animation.indexOf('-') != -1) {
             var randomAnimList = animation.split('-');
             selectedAnimNumber = parseInt(randomAnimList[(Math.floor(Math.random() * randomAnimList.length))]);
         }
         else {
             selectedAnimNumber = parseInt(animation);
-        }    
+        }
 
         // Checking if the animation number is out of bound, max allowed value is 1 to 67.
         if (selectedAnimNumber > 67) {
@@ -242,7 +242,7 @@ var PageTransitions = (function ($, options) {
             case 16:
                 inClass = 'pt-page-moveFromTop';
                 outClass = 'pt-page-moveToBottomEasing pt-page-ontop';
-                break;            
+                break;
             case 17:
                 inClass = 'pt-page-moveFromRight pt-page-ontop';
                 outClass = 'pt-page-scaleDown';
@@ -250,7 +250,7 @@ var PageTransitions = (function ($, options) {
             case 18:
                 inClass = 'pt-page-moveFromLeft pt-page-ontop';
                 outClass = 'pt-page-scaleDown';
-                break; 
+                break;
             case 19:
                 inClass = 'pt-page-moveFromBottom pt-page-ontop';
                 outClass = 'pt-page-scaleDown';
@@ -282,7 +282,7 @@ var PageTransitions = (function ($, options) {
             case 26:
                 inClass = 'pt-page-scaleUp';
                 outClass = 'pt-page-moveToBottom pt-page-ontop';
-                break;            
+                break;
             case 27:
                 inClass = 'pt-page-scaleUpCenter pt-page-delay400';
                 outClass = 'pt-page-scaleDownCenter';
@@ -290,7 +290,7 @@ var PageTransitions = (function ($, options) {
             case 28:
                 inClass = 'pt-page-moveFromRight pt-page-delay200 pt-page-ontop';
                 outClass = 'pt-page-rotateRightSideFirst';
-                break;        
+                break;
             case 29:
                 inClass = 'pt-page-moveFromLeft pt-page-delay200 pt-page-ontop';
                 outClass = 'pt-page-rotateLeftSideFirst';
@@ -298,7 +298,7 @@ var PageTransitions = (function ($, options) {
             case 30:
                 inClass = 'pt-page-moveFromTop pt-page-delay200 pt-page-ontop';
                 outClass = 'pt-page-rotateTopSideFirst';
-                break;        
+                break;
             case 31:
                 inClass = 'pt-page-moveFromBottom pt-page-delay200 pt-page-ontop';
                 outClass = 'pt-page-rotateBottomSideFirst';
@@ -306,7 +306,7 @@ var PageTransitions = (function ($, options) {
             case 32:
                 inClass = 'pt-page-flipInLeft pt-page-delay500';
                 outClass = 'pt-page-flipOutRight';
-                break;            
+                break;
             case 33:
                 inClass = 'pt-page-flipInRight pt-page-delay500';
                 outClass = 'pt-page-flipOutLeft';
@@ -314,7 +314,7 @@ var PageTransitions = (function ($, options) {
             case 34:
                 inClass = 'pt-page-flipInBottom pt-page-delay500';
                 outClass = 'pt-page-flipOutTop';
-                break;    
+                break;
             case 35:
                 inClass = 'pt-page-flipInTop pt-page-delay500';
                 outClass = 'pt-page-flipOutBottom';
@@ -322,7 +322,7 @@ var PageTransitions = (function ($, options) {
             case 36:
                 inClass = 'pt-page-scaleUp';
                 outClass = 'pt-page-rotateFall pt-page-ontop';
-                break;            
+                break;
             case 37:
                 inClass = 'pt-page-rotateInNewspaper pt-page-delay500';
                 outClass = 'pt-page-rotateOutNewspaper';
@@ -330,7 +330,7 @@ var PageTransitions = (function ($, options) {
             case 38:
                 inClass = 'pt-page-moveFromRight';
                 outClass = 'pt-page-rotatePushLeft';
-                break;            
+                break;
             case 39:
                 inClass = 'pt-page-moveFromLeft';
                 outClass = 'pt-page-rotatePushRight';
@@ -338,7 +338,7 @@ var PageTransitions = (function ($, options) {
             case 40:
                 inClass = 'pt-page-moveFromBottom';
                 outClass = 'pt-page-rotatePushTop';
-                break;            
+                break;
             case 41:
                 inClass = 'pt-page-moveFromTop';
                 outClass = 'pt-page-rotatePushBottom';
@@ -346,7 +346,7 @@ var PageTransitions = (function ($, options) {
             case 42:
                 inClass = 'pt-page-rotatePullRight pt-page-delay180';
                 outClass = 'pt-page-rotatePushLeft';
-                break;            
+                break;
             case 43:
                 inClass = 'pt-page-rotatePullLeft pt-page-delay180';
                 outClass = 'pt-page-rotatePushRight';
@@ -354,7 +354,7 @@ var PageTransitions = (function ($, options) {
             case 44:
                 inClass = 'pt-page-rotatePullBottom pt-page-delay180';
                 outClass = 'pt-page-rotatePushTop';
-                break;            
+                break;
             case 45:
                 inClass = 'pt-page-rotatePullTop pt-page-delay180';
                 outClass = 'pt-page-rotatePushBottom';
@@ -362,7 +362,7 @@ var PageTransitions = (function ($, options) {
             case 46:
                 inClass = 'pt-page-moveFromRightFade';
                 outClass = 'pt-page-rotateFoldLeft';
-                break;            
+                break;
             case 47:
                 inClass = 'pt-page-moveFromLeftFade';
                 outClass = 'pt-page-rotateFoldRight';
@@ -378,7 +378,7 @@ var PageTransitions = (function ($, options) {
             case 50:
                 inClass = 'pt-page-rotateUnfoldLeft';
                 outClass = 'pt-page-moveToRightFade';
-                break;            
+                break;
             case 51:
                 inClass = 'pt-page-rotateUnfoldRight';
                 outClass = 'pt-page-moveToLeftFade';
@@ -394,7 +394,7 @@ var PageTransitions = (function ($, options) {
             case 54:
                 inClass = 'pt-page-rotateRoomLeftIn';
                 outClass = 'pt-page-rotateRoomLeftOut pt-page-ontop';
-                break;            
+                break;
             case 55:
                 inClass = 'pt-page-rotateRoomRightIn';
                 outClass = 'pt-page-rotateRoomRightOut pt-page-ontop';
@@ -402,7 +402,7 @@ var PageTransitions = (function ($, options) {
             case 56:
                 inClass = 'pt-page-rotateRoomTopIn';
                 outClass = 'pt-page-rotateRoomTopOut pt-page-ontop';
-                break;        
+                break;
             case 57:
                 inClass = 'pt-page-rotateRoomBottomIn';
                 outClass = 'pt-page-rotateRoomBottomOut pt-page-ontop';
@@ -410,7 +410,7 @@ var PageTransitions = (function ($, options) {
             case 58:
                 inClass = 'pt-page-rotateCubeLeftIn';
                 outClass = 'pt-page-rotateCubeLeftOut pt-page-ontop';
-                break;            
+                break;
             case 59:
                 inClass = 'pt-page-rotateCubeRightIn';
                 outClass = 'pt-page-rotateCubeRightOut pt-page-ontop';
@@ -418,7 +418,7 @@ var PageTransitions = (function ($, options) {
             case 60:
                 inClass = 'pt-page-rotateCubeTopIn';
                 outClass = 'pt-page-rotateCubeTopOut pt-page-ontop';
-                break;           
+                break;
             case 61:
                 inClass = 'pt-page-rotateCubeBottomIn';
                 outClass = 'pt-page-rotateCubeBottomOut pt-page-ontop';
@@ -426,7 +426,7 @@ var PageTransitions = (function ($, options) {
             case 62:
                 inClass = 'pt-page-rotateCarouselLeftIn';
                 outClass = 'pt-page-rotateCarouselLeftOut pt-page-ontop';
-                break;            
+                break;
             case 63:
                 inClass = 'pt-page-rotateCarouselRightIn';
                 outClass = 'pt-page-rotateCarouselRightOut pt-page-ontop';
@@ -434,7 +434,7 @@ var PageTransitions = (function ($, options) {
             case 64:
                 inClass = 'pt-page-rotateCarouselTopIn';
                 outClass = 'pt-page-rotateCarouselTopOut pt-page-ontop';
-                break;            
+                break;
             case 65:
                 inClass = 'pt-page-rotateCarouselBottomIn';
                 outClass = 'pt-page-rotateCarouselBottomOut pt-page-ontop';
@@ -442,11 +442,11 @@ var PageTransitions = (function ($, options) {
             case 66:
                 inClass = 'pt-page-rotateSidesIn pt-page-delay200';
                 outClass = 'pt-page-rotateSidesOut';
-                break;            
+                break;
             case 67:
                 inClass = 'pt-page-rotateSlideIn';
                 outClass = 'pt-page-rotateSlideOut';
-                break;                        
+                break;
         }
 
         // This will get the pt-trigger elements parent wrapper div
@@ -462,7 +462,7 @@ var PageTransitions = (function ($, options) {
 
             // NEXT PAGE
             currentPageId = gotoPage;
-            
+
             // Check if the current page is same as the next page then do not do the animation
             // else reset the 'isAnimatiing' flag
             if (tempPageIndex != currentPageId) {
@@ -473,11 +473,11 @@ var PageTransitions = (function ($, options) {
                 // Next page to be animated.
 
                 var $nextPage = $('section[data-id='+currentPageId+']').addClass('pt-page-current');
-                
+
                 windowArea.scrollTop(0);
                 var subpagesHeight = windowArea.height();
-                $(".subpages").height(subpagesHeight + 50); //50 is the bottom margin value of the pt-page, in the main.css file    
-            
+                $(".subpages").height(subpagesHeight + 50); //50 is the bottom margin value of the pt-page, in the main.css file
+
                 $currentPage.addClass(outClass).on(animEndEventName, function() {
                     $currentPage.off(animEndEventName);
                     endCurrentPage = true;
@@ -502,11 +502,12 @@ var PageTransitions = (function ($, options) {
                 isAnimating = false;
             }
 
-        // Check if the animation is supported by browser and reset the pages.    
+
+        // Check if the animation is supported by browser and reset the pages.
         if(!support) {
             onEndAnimation($currentPage, $nextPage);
-        }    
-    
+        }
+
     }
 
     function onEndAnimation($pageWrapper, $nextPage, $currentPage) {
@@ -519,7 +520,7 @@ var PageTransitions = (function ($, options) {
         $currentPage.attr('class', $currentPage.data('originalClassList'));
         $nextPage.attr('class', $nextPage.data('originalClassList') + ' pt-page-current');
     }
-    
+
     return {
         init : init,
     };
